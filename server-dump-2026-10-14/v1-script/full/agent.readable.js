@@ -1,0 +1,2527 @@
+"use strict";
+(() => {
+  var h = class s {
+    static isIOS() {
+      return Process.platform == "darwin"
+    }
+    static isAndroid() {
+      return Process.platform == "linux"
+    }
+    static toString() {
+      return `platform=${s.isAndroid()?"Android":"iOS"}, arch=${Process.arch}`
+    }
+  };
+  var Qe = h.isAndroid() ? "libg.so" : "laser",
+    y = class {
+      static module;
+      static size;
+      static begin;
+      static end;
+      static init(e) {
+        this.module = Process.findModuleByName(e), this.begin = this.module.base, this.size = this.module.size, this.end = this.begin.add(this.size)
+      }
+      static offset(e, t) {
+        this.module || this.init(Qe);
+        let r = h.isAndroid() ? e : t;
+        return r == -1 ? NULL : this.begin.add(r)
+      }
+    };
+  var Ze = {
+    setPriceTxt: [-1, 2716416],
+    priceWidget: [7131724, 2717636],
+    patcherDecrypt: [16307200, -1],
+    newsPopupCtor: [7006860, -1],
+    popupBaseCtor: [5594292, -1],
+    newsPopupVTable: [14935888, -1],
+    popupScreenHeader: [5600348, -1],
+    popupCenterNaviX: [5767712, -1],
+    popupFadeOutBase: [5765468, -1],
+    uiPopupVTable: [14816736, -1],
+    realStageInstance: [9853660, -1],
+    removeFromParent: [9753436, -1],
+    containerAddChild: [9823412, -1],
+    setChildVisible: [9774676, -1],
+    screenWidthPx: [11824364, -1],
+    screenHeightPx: [11824376, -1],
+    laserBoxManager: [6227488, -1],
+    gameWebViewGet: [6237700, -1],
+    webViewPushGeometry: [4683228, -1],
+    webViewGoTo: [4687104, -1],
+    webViewHide: [4683420, -1],
+    webViewRefreshArea: [4682348, -1],
+    webViewListenerVT: [14719024, -1],
+    webViewShouldOpen: [4683520, -1],
+    webViewDidFinishLoad: [4686092, -1],
+    webViewEval: [11830572, -1],
+    jniEnv: [13852636, -1],
+    soundManager: [15922696, 18361488],
+    soundPlay: [7694664, 3193072],
+    soundFadeMusic: [7694124, 3192684],
+    soundOk: [8289460, 3655044],
+    soundBack: [8289496, 3655080],
+    soundClose: [8289508, 3655092],
+    gameSettings: [15922568, 18361472],
+    hapticsEnabled: [7662416, 3164960],
+    hapticFeedback: [11854280, -1],
+    messageManager: [15920464, 18360536],
+    voucherMessageCtor: [9280904, 4391828],
+    stringAssignCStr: [11621008, 14482560],
+    laserBoxSetSiteSeen: [6231288, 1965284],
+    laserBoxRequestJwt: [6236352, 1972656],
+    laserBoxSetJwt: [6236428, 1972740],
+    gameMain: [15923232, 18361616],
+    shopOpen: [6620792, 2298808],
+    shopSelectItem: [7618580, -1],
+    scidManager: [15921504, -1],
+    openWebSso: [12168932, -1],
+    soundSystem: [11611620, -1],
+    musicLoad: [11613044, -1],
+    musicPlay: [11613432, -1],
+    musicStop: [11613776, -1],
+    musicPlaying: [11615604, -1],
+    guiRemovePopup: [4653428, -1],
+    containerRemoveChild: [9824192, -1],
+    homeMode: [7744280, -1],
+    childByName: [9772484, 12340208],
+    textFieldByName: [9773304, 12340996],
+    offerBuyable: [7132020, 2717924],
+    offerMoneyBuyable: [7132184, 2718080],
+    shopInteractGate: [7117616, 2704216],
+    offerItemPressed: [7191816, 2771160],
+    offerBillingPackage: [9441748, 4479280],
+    offerPurchaseError: [8035496, 3464952],
+    buyEntry: [7114240, 2701412],
+    startPurchase: [3946884, 62932],
+    localeData: [15923504, 18361656],
+    getName: [8232388, 3621564],
+    setText: [9946384, 12514148],
+    txPending: [3947848, 64104],
+    deliveryPending: [3947956, 64200],
+    showToast: [4651892, 626432],
+    openUrl: [11836796, -1],
+    touchDispatch: [9867112, -1],
+    popupCtor: [6264884, 1997724],
+    popupSetField: [6261964, 1994632],
+    popupPressed: [6265868, 1998532],
+    stageInstance: [4649776, 624616],
+    stageShowPopup: [4655480, 628868],
+    connectTo: [6354944, 2073092],
+    connectorConnect: [11551148, 14410264],
+    clientHelloMinor: [10058288, 12620444]
+  };
+
+  function l(s) {
+    let [e, t] = Ze[s];
+    return y.offset(e, t)
+  }
+
+  function p(s) {
+    return !l(s).isNull()
+  }
+  var q = null,
+    X = null;
+
+  function he(s, e) {
+    q === null && (q = new NativeFunction(y.offset(11620136, 14482124), "pointer", ["pointer", "pointer"])), q(s, e)
+  }
+
+  function et(s) {
+    X === null && (X = new NativeFunction(y.offset(11619664, 14481544), "void", ["pointer"])), X(s)
+  }
+  var tt = 4,
+    be = 8,
+    rt = 8,
+    nt = 32,
+    u = class {
+      static read(e, t = 4096) {
+        try {
+          if (e.isNull()) return "";
+          let r = e.add(tt).readInt();
+          if (r <= 0 || r > t) return "";
+          let n = r >= rt ? e.add(be).readPointer() : e.add(be);
+          return n.isNull() ? "" : (n.readCString(r) ?? "").trim()
+        } catch {
+          return ""
+        }
+      }
+      static create(e) {
+        let t = Memory.alloc(nt);
+        return he(t, Memory.allocUtf8String(e)), t
+      }
+      static destroy(e) {
+        try {
+          et(e)
+        } catch {}
+      }
+      static write(e, t) {
+        he(e, Memory.allocUtf8String(t))
+      }
+    };
+  var st = 4,
+    ve = new Set;
+
+  function ye(s, e) {
+    try {
+      e(null, JSON.parse(s))
+    } catch (t) {
+      e(t instanceof Error ? t : new Error(String(t)), null)
+    }
+  }
+
+  function ot(s) {
+    let e = /^http:\/\/([^/:]+)(?::(\d+))?(\/.*)?$/i.exec(s);
+    return e === null ? null : {
+      host: e[1],
+      port: e[2] === void 0 ? 80 : Number.parseInt(e[2], 10),
+      path: e[3] ?? "/"
+    }
+  }
+
+  function it(s) {
+    let e = s.reduce((o, i) => o + i.byteLength, 0),
+      t = new Uint8Array(e),
+      r = 0;
+    for (let o of s) t.set(new Uint8Array(o), r), r += o.byteLength;
+    let n = "";
+    for (let o of t) n += String.fromCharCode(o);
+    return decodeURIComponent(escape(n))
+  }
+  var U = class {
+    static getJSON(e, t) {
+      if (h.isAndroid()) {
+        this.getJSONSocket(e, t);
+        return
+      }
+      this.getJSONIOS(e, t)
+    }
+    static getJSONSocket(e, t) {
+      let r = ot(e);
+      if (r === null) {
+        t(new Error(`only plain http:// urls are supported here: ${e}`), null);
+        return
+      }
+      let n = `GET ${r.path} HTTP/1.1\r
+Host: ${r.host}:${r.port}\r
+User-Agent: btb-agent\r
+Accept: application/json\r
+Connection: close\r
+\r
+`;
+      Socket.connect({
+        family: "ipv4",
+        host: r.host,
+        port: r.port
+      }).then(async o => {
+        try {
+          let i = Array.from(n, x => x.charCodeAt(0));
+          await o.output.writeAll(i);
+          let a = [];
+          for (;;) {
+            let x = await o.input.read(8192);
+            if (x.byteLength === 0) break;
+            a.push(x)
+          }
+          o.close();
+          let d = it(a),
+            f = d.indexOf(`\r
+\r
+`);
+          if (f < 0) {
+            t(new Error("malformed http response"), null);
+            return
+          }
+          let b = /^HTTP\/\d\.\d (\d+)/.exec(d);
+          if (b !== null && b[1] !== "200") {
+            t(new Error(`HTTP ${b[1]}`), null);
+            return
+          }
+          let O = d.slice(f + 4).trim();
+          if (O.length === 0) {
+            t(new Error("empty response body"), null);
+            return
+          }
+          ye(O, t)
+        } catch (i) {
+          t(i instanceof Error ? i : new Error(String(i)), null)
+        }
+      }).catch(o => t(o instanceof Error ? o : new Error(String(o)), null))
+    }
+    static getJSONIOS(e, t) {
+      if (typeof ObjC > "u" || !ObjC.available) {
+        t(new Error("ObjC runtime is not available"), null);
+        return
+      }
+      try {
+        let r = ObjC.classes.NSURL.URLWithString_(e);
+        if (r === null || r.handle.isNull()) {
+          t(new Error(`invalid url: ${e}`), null);
+          return
+        }
+        let n;
+        n = new ObjC.Block({
+          retType: "void",
+          argTypes: ["object", "object", "object"],
+          implementation(i, a, d) {
+            ve.delete(n);
+            try {
+              if (d !== null && !d.handle.isNull()) {
+                t(new Error(String(d.localizedDescription())), null);
+                return
+              }
+              if (i === null || i.handle.isNull() || Number(i.length()) === 0) {
+                t(new Error("empty response body"), null);
+                return
+              }
+              let f = ObjC.classes.NSString.alloc().initWithData_encoding_(i, st);
+              if (f === null || f.handle.isNull()) {
+                t(new Error("response is not valid UTF-8"), null);
+                return
+              }
+              ye(f.toString(), t)
+            } catch (f) {
+              t(f instanceof Error ? f : new Error(String(f)), null)
+            }
+          }
+        }), ve.add(n), ObjC.classes.NSURLSession.sharedSession().dataTaskWithURL_completionHandler_(r, n).resume()
+      } catch (r) {
+        t(r instanceof Error ? r : new Error(String(r)), null)
+      }
+    }
+  };
+  var we = "127.0.0.1",
+    Ne = "192.168.0.100",
+    D = {
+      host: "script.backtobs.xyz",
+      hosts: ["script.backtobs.xyz"],
+      port: 8787,
+      path: "/v1/script",
+      tls: !1,
+      protocol: 3,
+      keyHex: "7f41cce5e1bb987251c190463af646c8d1910b06d5a26a03fd986dd70f64790a",
+      channelPubKeyHex: "02135409e2a48c5f00d74fb9669ca67c69d2e2f6120ff3c47455c28d95f08439",
+      pubKeyHex: "14c46a10259df2be9baec6300bf83047fc1f0f284615d93cfa2e1d0765b49760",
+      minEpoch: 1,
+      maxOfflineAgeSec: 86400,
+      connectTimeoutMs: 2500,
+      networkBudgetMs: 4e3,
+      hardDeadlineMs: 8e3,
+      cacheSubdir: "btb",
+      cacheFile: "agent.enc",
+      metaFile: "agent.meta.json",
+      highWaterFile: "epoch.hw"
+    };
+  var ke = 120,
+    lt = 40,
+    I = class {
+      static enabled = !0;
+      static verbose = !1;
+      static queue = [];
+      static sending = !1;
+      static lastText = "";
+      static write(e) {
+        console.log(e), this.enqueue(e)
+      }
+      static trace(e) {
+        console.log(e), this.verbose && this.enqueue(e)
+      }
+      static enqueue(e) {
+        this.enabled && e !== this.lastText && (this.lastText = e, !(this.queue.length >= lt) && (this.queue.push(e), this.sending || this.drain()))
+      }
+      static drain() {
+        let e = this.queue.shift();
+        if (e === void 0) {
+          this.sending = !1;
+          return
+        }
+        this.sending = !0;
+        try {
+          let r = `${D.tls?"https":"http"}://${D.host}:${D.port}/log?m=${encodeURIComponent(e)}`;
+          U.getJSON(r, () => setTimeout(() => this.drain(), ke))
+        } catch {
+          setTimeout(() => this.drain(), ke)
+        }
+      }
+    };
+  var xe = "game.backtobs.xyz",
+    Pe = "9339",
+    H = class {
+      static listeners = [];
+      static host = null;
+      static port = null;
+      static patch() {
+        if (!(this.listeners.length > 0)) {
+          if (this.host = u.create(xe), this.port = u.create(Pe), this.hook("connectTo"), this.hook("connectorConnect"), this.listeners.length === 0) {
+            console.log("[network] no usable connect offset for this platform");
+            return
+          }
+          console.log(`[network] server redirect -> ${xe}:${Pe}`)
+        }
+      }
+      static hook(e) {
+        if (!p(e)) return;
+        let t = l(e),
+          r = this.host,
+          n = this.port,
+          o = t.toString();
+        try {
+          let i = Process.findModuleByAddress(t);
+          i !== null && (o = `${i.name}+0x${t.sub(i.base).toString(16)}`)
+        } catch {}
+        try {
+          this.listeners.push(Interceptor.attach(t, {
+            onEnter(i) {
+              i[1] = r, i[2] = n
+            }
+          })), I.write(`[network] ${e} hooked at ${o}`)
+        } catch (i) {
+          I.write(`[network] ${e} attach FAILED at ${o}: ${i.message??i}`)
+        }
+      }
+      static unpatch() {
+        if (this.listeners.length === 0) return "server redirect is not installed";
+        for (let e of this.listeners) e.detach();
+        return this.listeners = [], "server redirect removed"
+      }
+    };
+  var M = null,
+    R = null;
+
+  function W(s) {
+    let e = s.trim().split(/[-_]/).filter(o => o.length > 0);
+    if (e.length === 0) return {
+      language: null,
+      region: null
+    };
+    let t = e[0].length === 2 ? e[0].toLowerCase() : null,
+      r = e[e.length - 1],
+      n = e.length > 1 && r.length === 2 ? r.toUpperCase() : null;
+    return {
+      language: t,
+      region: n
+    }
+  }
+
+  function Se(s) {
+    try {
+      let e = Module.findGlobalExportByName("__system_property_get");
+      if (e === null) return null;
+      let t = new NativeFunction(e, "int", ["pointer", "pointer"]),
+        r = Memory.alloc(96);
+      if (r.writeU8(0), t(Memory.allocUtf8String(s), r) <= 0) return null;
+      let n = r.readUtf8String();
+      return n === null || n.length === 0 ? null : n
+    } catch {
+      return null
+    }
+  }
+
+  function at() {
+    let s = ["persist.sys.locale", "ro.product.locale", "ro.product.locale.language", "ro.csc.countryiso_code"],
+      e = {
+        language: null,
+        region: null
+      };
+    for (let t of s) {
+      let r = Se(t);
+      if (r === null) continue;
+      let n = W(r);
+      if (e.language = e.language ?? n.language, e.region = e.region ?? n.region, e.language !== null && e.region !== null) break
+    }
+    return e.region = e.region ?? W(Se("persist.sys.country") ?? "").language?.toUpperCase() ?? null, e
+  }
+
+  function ct() {
+    if (typeof ObjC > "u" || !ObjC.available) return {
+      language: null,
+      region: null
+    };
+    try {
+      let s = ObjC.classes.NSLocale.currentLocale(),
+        e = W(s.localeIdentifier().toString()),
+        t = ObjC.selector("countryCode");
+      if (e.region === null && s.respondsToSelector_(t)) {
+        let n = s.countryCode();
+        if (n !== null && !n.handle.isNull()) {
+          let o = n.toString();
+          o.length === 2 && (e.region = o.toUpperCase())
+        }
+      }
+      let r = ObjC.classes.NSLocale.preferredLanguages();
+      if (r !== null && Number(r.count()) > 0) {
+        let n = W(r.objectAtIndex_(0).toString());
+        e.language = n.language ?? e.language
+      }
+      return e
+    } catch {
+      return {
+        language: null,
+        region: null
+      }
+    }
+  }
+
+  function ut() {
+    return h.isAndroid() ? at() : ct()
+  }
+  var K = null,
+    Ce = "";
+
+  function pt() {
+    try {
+      if (!p("localeData")) return "";
+      let s = l("localeData").readPointer();
+      if (s.isNull()) return "";
+      K === null && (K = new NativeFunction(l("getName"), "pointer", ["pointer"]));
+      let e = u.read(K(s)).toLowerCase();
+      return e !== Ce && (Ce = e, console.log(`[locale] in-game language: ${e||"unknown"}`)), e
+    } catch {
+      return ""
+    }
+  }
+  var m = class {
+    static regionOverride = null;
+    static languageOverride = null;
+    static gameLanguage() {
+      return this.languageOverride !== null ? this.languageOverride.toLowerCase() : pt()
+    }
+    static region() {
+      return this.regionOverride !== null ? this.regionOverride.toUpperCase() : M !== null ? M : (this.resolve(), M ?? "")
+    }
+    static language() {
+      return this.languageOverride !== null ? this.languageOverride.toLowerCase() : R !== null ? R : (this.resolve(), R ?? "")
+    }
+    static resolve() {
+      let e = ut();
+      M = e.region ?? "", R = e.language ?? "", console.log(`[locale] device region=${M||"unknown"} language=${R||"unknown"}`)
+    }
+    static reset() {
+      M = null, R = null
+    }
+  };
+  var dt = 536,
+    ft = 368,
+    mt = 376,
+    gt = 200,
+    ht = 53,
+    bt = 300 * 1e3,
+    J = null,
+    Y = null,
+    Q = null,
+    Fe = null,
+    $e = null,
+    Oe = {
+      title: Memory.allocUtf8String("title_txt"),
+      body: Memory.allocUtf8String("txt")
+    };
+
+  function vt() {
+    if (J !== null) return J;
+    let s = Module.findGlobalExportByName("_Znwm") ?? Module.getGlobalExportByName("malloc");
+    return J = new NativeFunction(s, "pointer", ["uint64"]), J
+  }
+
+  function yt() {
+    Y === null && (Y = new NativeFunction(l("popupCtor"), "pointer", ["pointer", "int"]), Q = new NativeFunction(l("popupSetField"), "void", ["pointer", "pointer", "pointer", "int", "int", "int"]), Fe = new NativeFunction(l("stageInstance"), "pointer", []), $e = new NativeFunction(l("stageShowPopup"), "void", ["pointer", "pointer", "int", "int", "int"]))
+  }
+
+  function Le(s, e) {
+    if (s.isNull()) return;
+    let t = s.readPointer().add(ht * Process.pointerSize).readPointer();
+    if (t.isNull()) return;
+    new NativeFunction(t, "void", ["pointer", "pointer", "int"])(s, u.create(e), 1)
+  }
+  var L = class s {
+    static debug = !1;
+    static pending = new Map;
+    static listener = null;
+    static install() {
+      if (!this.available()) {
+        console.error("[popup] no generic popup offsets for this build");
+        return
+      }
+      this.installListener()
+    }
+    static available() {
+      return p("popupCtor") && p("popupSetField") && p("popupPressed") && p("stageInstance") && p("stageShowPopup")
+    }
+    static show(e) {
+      try {
+        return this.build(e)
+      } catch (t) {
+        return console.error("[popup] could not be built:", t.stack ?? t), !1
+      }
+    }
+    static build(e) {
+      if (!this.available()) return console.error("[popup] no generic popup offsets for this build"), !1;
+      yt(), this.installListener(), this.prune();
+      let t = s.debug,
+        r = Fe();
+      if (r.isNull()) return console.error("[popup] stage is not up yet"), !1;
+      let n = vt()(dt);
+      if (n.isNull()) return console.error("[popup] allocation failed"), !1;
+      t && console.log(`[popup] allocated ${n}, running ctor`), Y(n, gt);
+      let o = n.add(ft).readPointer(),
+        i = n.add(mt).readPointer();
+      return t && console.log(`[popup] built, yes=${o} no=${i}`), Le(o, e.confirmText), Le(i, e.cancelText), Q(n, Oe.title, u.create(e.title), 0, 1, 0), Q(n, Oe.body, u.create(e.message), 1, 0, 1), t && console.log("[popup] text written, showing"), this.pending.set(n.toString(), {
+        ...e,
+        yesButton: o.toString(),
+        created: Date.now()
+      }), $e(r, n, 1, 0, 1), console.log(`[popup] shown ${n} (yes=${o} no=${i})`), !0
+    }
+    static installListener() {
+      if (this.listener !== null) return;
+      let e = this.pending;
+      this.listener = Interceptor.attach(l("popupPressed"), {
+        onEnter(t) {
+          let r = this;
+          r.action = null;
+          let n = t[0].toString(),
+            o = e.get(n);
+          o !== void 0 && (e.delete(n), r.action = t[1].toString() === o.yesButton ? o.onConfirm : o.onCancel ?? null)
+        },
+        onLeave() {
+          let t = this,
+            r = t.action;
+          if (t.action = null, r !== null) try {
+            r()
+          } catch (n) {
+            console.error("[popup] handler failed:", n.stack ?? n)
+          }
+        }
+      }), console.log("[popup] generic popup handler attached")
+    }
+    static prune() {
+      let e = Date.now() - bt;
+      for (let [t, r] of this.pending) r.created < e && this.pending.delete(t)
+    }
+    static uninstall() {
+      this.listener?.detach(), this.listener = null, this.pending.clear()
+    }
+  };
+  var Ue = {
+    "com.supercell.laser.gempack0": 1.99,
+    "com.supercell.laser.gempack1": 4.99,
+    "com.supercell.laser.gempack2": 9.99,
+    "com.supercell.laser.gempack3": 19.99,
+    "com.supercell.laser.gempack4": 49.99,
+    "com.supercell.laser.gempack5": 99.99,
+    "com.supercell.laser.starterpack1": 2.99,
+    "com.supercell.laser.starterpack2": 3.99,
+    "com.supercell.laser.starterpack3": 4.99,
+    "com.supercell.laser.starterpack4": 5.99,
+    "com.supercell.laser.xmas2018pack": 4.99,
+    "com.supercell.laser.starterpackx": 4.99,
+    "com.supercell.laser.starterpack5": 6.99,
+    "com.supercell.laser.starterpack6": 7.99,
+    "com.supercell.laser.starterpack7": 8.99,
+    "com.supercell.laser.lny2019pack": 9.99,
+    "com.supercell.laser.march2019pack": 4.99,
+    "com.supercell.laser.starterpack8": 9.99,
+    "com.supercell.laser.goldenweek": 9.99,
+    "com.supercell.laser.retropolisgempack": 4.99,
+    "com.supercell.laser.retropoliscoins1": 4.99,
+    "com.supercell.laser.retropoliscoins2": 4.99,
+    "com.supercell.laser.retropoliscoins3": 4.99,
+    "com.supercell.laser.sprinkle0": .99,
+    "com.supercell.laser.sprinkle1": .99,
+    "com.supercell.laser.sprinkle2": .99,
+    "com.supercell.laser.sprinkle3": .99,
+    "com.supercell.laser.sprinkle4": .99,
+    "com.supercell.laser.sprinkle5": .99,
+    "com.supercell.laser.sprinkle6": .99,
+    "com.supercell.laser.sprinkle7": .99,
+    "com.supercell.laser.sprinkle8": .99,
+    "com.supercell.laser.sprinkle9": .99,
+    "com.supercell.laser.som1": 4.99,
+    "com.supercell.laser.som2": 9.99,
+    "com.supercell.laser.som3": 19.99,
+    "com.supercell.laser.som4": 9.99,
+    "com.supercell.laser.august1": 9.99,
+    "com.supercell.laser.august2": 19.99,
+    "com.supercell.laser.flash1": 4.99,
+    "com.supercell.laser.flash2": 29.99,
+    "com.supercell.laser.moon191": 9.99,
+    "com.supercell.laser.moon192": 49.99,
+    "com.supercell.laser.b2s191": 9.99,
+    "com.supercell.laser.b2s192": 4.99,
+    "com.supercell.laser.b2s193": 1.99,
+    "com.supercell.laser.cw191": 1.99,
+    "com.supercell.laser.cw192": 4.99,
+    "com.supercell.laser.cw193": 2.99,
+    "com.supercell.laser.gstar2019": 49.99,
+    "com.supercell.laser.bow191": 9.99,
+    "com.supercell.laser.bow192": 6.99,
+    "com.supercell.laser.bow193": 14.99,
+    "com.supercell.laser.arabic01": 1.99,
+    "com.supercell.laser.arabic02": 4.99,
+    "com.supercell.laser.xmas190": 9.99,
+    "com.supercell.laser.xmas191": .99,
+    "com.supercell.laser.xmas192": 4.99,
+    "com.supercell.laser.xmas193": 9.99,
+    "com.supercell.laser.xmas194": 19.99,
+    "com.supercell.laser.cp1119": 2.99,
+    "com.supercell.laser.xmas195": 1.99,
+    "com.supercell.laser.xmas196": 6.99,
+    "com.supercell.laser.xmas197": 12.99,
+    "com.supercell.laser.xmas198": 24.99,
+    "com.supercell.laser.xmas199": 2.99,
+    "com.supercell.laser.xmas200": 7.99,
+    "com.supercell.laser.xmas201": 14.99,
+    "com.supercell.laser.xmas202": 29.99,
+    "com.supercell.laser.ny201": 4.99,
+    "com.supercell.laser.cp0120": .99,
+    "com.supercell.laser.cp0121": 1.99,
+    "com.supercell.laser.lny201": 2.99,
+    "com.supercell.laser.lny202": 2.99,
+    "com.supercell.laser.lny203": 4.99,
+    "com.supercell.laser.lny204": 9.99,
+    "com.supercell.laser.lny205": 19.99,
+    "com.supercell.laser.lny206": 3.99,
+    "com.supercell.laser.lny207": 4.99,
+    "com.supercell.laser.lny208": 9.99,
+    "com.supercell.laser.lny209": 14.99,
+    "com.supercell.laser.lny2010": 29.99,
+    "com.supercell.laser.lny2011": 1.99,
+    "com.supercell.laser.tgs201": 4.99,
+    "com.supercell.laser.tgs202": 9.99,
+    "com.supercell.laser.vd20": 4.99,
+    "com.supercell.laser.mar20": 9.99,
+    "com.supercell.laser.brawlpass0": 4.99,
+    "com.supercell.laser.brawlpass1": 4.99,
+    "com.supercell.laser.0320gp": 19.99,
+    "com.supercell.laser.0320backup": 4.99,
+    "com.supercell.laser.bundle099": .99,
+    "com.supercell.laser.bundle199": 1.99,
+    "com.supercell.laser.bundle299": 2.99,
+    "com.supercell.laser.bundle399": 3.99,
+    "com.supercell.laser.bundle499": 4.99,
+    "com.supercell.laser.bundle599": 5.99,
+    "com.supercell.laser.bundle699": 6.99,
+    "com.supercell.laser.bundle799": 7.99,
+    "com.supercell.laser.bundle899": 8.99,
+    "com.supercell.laser.bundle999": 9.99,
+    "com.supercell.laser.bundle1099": 10.99,
+    "com.supercell.laser.bundle1199": 11.99,
+    "com.supercell.laser.bundle1299": 12.99,
+    "com.supercell.laser.bundle1399": 13.99,
+    "com.supercell.laser.bundle1499": 14.99,
+    "com.supercell.laser.bundle1599": 15.99,
+    "com.supercell.laser.bundle1699": 16.99,
+    "com.supercell.laser.bundle1799": 17.99,
+    "com.supercell.laser.bundle1899": 18.99,
+    "com.supercell.laser.bundle1999": 19.99,
+    "com.supercell.laser.bundle2999": 29.99,
+    "com.supercell.laser.bundle3999": 39.99,
+    "com.supercell.laser.bundle4999": 49.99,
+    "com.supercell.laser.bundle9999": 99.99,
+    "com.supercell.laser.psg1": 4.99,
+    "com.supercell.laser.psg2": 9.99,
+    "com.supercell.laser.04200": 4.99,
+    "com.supercell.laser.gw200": 4.99,
+    "com.supercell.laser.gw201": 9.99,
+    "com.supercell.laser.gw202": 29.99,
+    "com.supercell.laser.04201": 1.99,
+    "com.supercell.laser.04202": 2.99,
+    "com.supercell.laser.sc101": 4.99,
+    "com.supercell.laser.sc102": 9.99,
+    "com.supercell.laser.0620": 4.99,
+    "com.supercell.laser.0720": 4.99,
+    "com.supercell.laser.0520c": 1.99,
+    "com.supercell.laser.0620c": 2.99,
+    "com.supercell.laser.0620d": 9.99,
+    "com.supercell.laser.ms201": 2.99,
+    "com.supercell.laser.ms202": 4.99,
+    "com.supercell.laser.ms203": 19.99,
+    "com.supercell.laser.coins0620": 4.99,
+    "com.supercell.laser.0520g": 49.99,
+    "com.supercell.laser_cn.gempack0": 1.99,
+    "com.supercell.laser_cn.gempack1": 4.99,
+    "com.supercell.laser_cn.gempack2": 9.99,
+    "com.supercell.laser_cn.gempack3": 19.99,
+    "com.supercell.laser_cn.gempack4": 49.99,
+    "com.supercell.laser_cn.gempack5": 99.99,
+    "com.supercell.laser_cn.starterpack1": 2.99,
+    "com.supercell.laser_cn.starterpack2": 3.99,
+    "com.supercell.laser_cn.starterpack3": 4.99,
+    "com.supercell.laser_cn.starterpack4": 5.99,
+    "com.supercell.laser_cn.starterpack5": 6.99,
+    "com.supercell.laser_cn.starterpack6": 7.99,
+    "com.supercell.laser_cn.starterpack7": 8.99,
+    "com.supercell.laser_cn.starterpack8": 9.99,
+    "com.supercell.laser_cn.bundle099": .99,
+    "com.supercell.laser_cn.bundle199": 1.99,
+    "com.supercell.laser_cn.bundle299": 2.99,
+    "com.supercell.laser_cn.bundle399": 3.99,
+    "com.supercell.laser_cn.bundle499": 4.99,
+    "com.supercell.laser_cn.bundle599": 5.99,
+    "com.supercell.laser_cn.bundle699": 6.99,
+    "com.supercell.laser_cn.bundle799": 7.99,
+    "com.supercell.laser_cn.bundle899": 8.99,
+    "com.supercell.laser_cn.bundle999": 9.99,
+    "com.supercell.laser_cn.bundle1099": 10.99,
+    "com.supercell.laser_cn.bundle1199": 11.99,
+    "com.supercell.laser_cn.bundle1299": 12.99,
+    "com.supercell.laser_cn.bundle1399": 13.99,
+    "com.supercell.laser_cn.bundle1499": 14.99,
+    "com.supercell.laser_cn.bundle1599": 15.99,
+    "com.supercell.laser_cn.bundle1699": 16.99,
+    "com.supercell.laser_cn.bundle1799": 17.99,
+    "com.supercell.laser_cn.bundle1899": 18.99,
+    "com.supercell.laser_cn.bundle1999": 19.99,
+    "com.supercell.laser_cn.bundle2999": 29.99,
+    "com.supercell.laser_cn.bundle3999": 39.99,
+    "com.supercell.laser_cn.bundle4999": 49.99,
+    "com.supercell.laser_cn.bundle9999": 99.99,
+    "com.supercell.laser_cn.0720": 4.99,
+    "com.supercell.laser_cn.0620c": 2.99,
+    "com.supercell.laser_cn.0620d": 9.99,
+    "com.supercell.laser_cn.ms201": 2.99,
+    "com.supercell.laser_cn.ms202": 4.99,
+    "com.supercell.laser_cn.ms203": 19.99,
+    "com.supercell.laser_cn.coins0620": 4.99,
+    "com.supercell.laser_cn.0520g": 49.99,
+    "com.supercell.laser.som_072001": 4.99,
+    "com.supercell.laser.som_072002": 9.99,
+    "com.supercell.laser.som_072003": 4.99,
+    "com.supercell.laser.som_072004": 1.99,
+    "com.supercell.laser.som_072005": 1.99,
+    "com.supercell.laser.som_072006": 29.99,
+    "com.supercell.laser.som_072007": 99.99,
+    "com.supercell.laser.som_072008": 9.99,
+    "com.supercell.laser.som_072009": 9.99,
+    "com.supercell.laser.som_072010": 4.99,
+    "com.supercell.laser_cn.som_072001": 4.99,
+    "com.supercell.laser_cn.som_072002": 9.99,
+    "com.supercell.laser_cn.som_072003": 4.99,
+    "com.supercell.laser_cn.som_072004": 1.99,
+    "com.supercell.laser_cn.som_072005": 1.99,
+    "com.supercell.laser_cn.som_072006": 29.99,
+    "com.supercell.laser_cn.som_072007": 99.99,
+    "com.supercell.laser_cn.som_072008": 9.99,
+    "com.supercell.laser_cn.som_072009": 9.99,
+    "com.supercell.laser_cn.som_072010": 4.99,
+    "com.supercell.laser.starr_09001": 9.99,
+    "com.supercell.laser.starr_09002": 9.99,
+    "com.supercell.laser.starr_09003": 1.99,
+    "com.supercell.laser.starr_09004": 1.99,
+    "com.supercell.laser.starr_09005": 1.99,
+    "com.supercell.laser.starr_09006": 9.99,
+    "com.supercell.laser_cn.starr_09001": 9.99,
+    "com.supercell.laser_cn.starr_09002": 9.99,
+    "com.supercell.laser_cn.starr_09003": 1.99,
+    "com.supercell.laser_cn.starr_09004": 1.99,
+    "com.supercell.laser_cn.starr_09005": 1.99,
+    "com.supercell.laser_cn.starr_09006": 9.99,
+    "com.supercell.laser_cn.starr_09007": 19.99,
+    "com.supercell.laser.starr_09007": 19.99,
+    "com.supercell.laser.bundle2499": 24.99,
+    "com.supercell.laser.bundle2799": 27.99,
+    "com.supercell.laser_cn.bundle2499": 29.99,
+    "com.supercell.laser_cn.bundle2799": 29.99,
+    "com.supercell.laser.newstarterpack1": .99,
+    "com.supercell.laser.newstarterpack2": 1.99,
+    "com.supercell.laser.newstarterpack3": 2.99,
+    "com.supercell.laser.newstarterpack4": 4.99,
+    "com.supercell.laser.newstarterpack5": 5.99,
+    "com.supercell.laser.newstarterpack6": 7.99,
+    "com.supercell.laser.newstarterpack7": 9.99,
+    "com.supercell.laser.newstarterpack8": 14.99,
+    "com.supercell.laser_cn.newstarterpack1": .99,
+    "com.supercell.laser_cn.newstarterpack2": 1.99,
+    "com.supercell.laser_cn.newstarterpack3": 2.99,
+    "com.supercell.laser_cn.newstarterpack4": 4.99,
+    "com.supercell.laser_cn.newstarterpack5": 5.99,
+    "com.supercell.laser_cn.newstarterpack6": 7.99,
+    "com.supercell.laser_cn.newstarterpack7": 9.99,
+    "com.supercell.laser_cn.newstarterpack8": 14.99,
+    "com.supercell.laser.seasonpass999": 9.99,
+    "com.supercell.laser_cn.seasonpass999": 9.99,
+    "com.supercell.laser.gempack0_yt": 1.99,
+    "com.supercell.laser.gempack2_yt": 9.99,
+    "com.supercell.laser.scid.gempack0": 1.99,
+    "com.supercell.laser.scid.gempack1": 4.99,
+    "com.supercell.laser.scid.gempack2": 9.99,
+    "com.supercell.laser.scid.gempack3": 19.99,
+    "com.supercell.laser.scid.gempack4": 49.99,
+    "com.supercell.laser.scid.gempack5": 99.99,
+    "com.supercell.laser.scid.seasonpass": 9.99,
+    "com.supercell.laser.scid.seasonpassbundle": 19.99,
+    "com.supercell.laser.gempack1_yt": 4.99,
+    "com.supercell.laser.scid.seasonpassbundle10": 9.99,
+    "com.supercell.laser.seasonpassbundle5": 9.99,
+    "com.supercell.laser.scid10.gempack0": 1.99,
+    "com.supercell.laser.scid10.gempack1": 4.99,
+    "com.supercell.laser.scid10.gempack2": 9.99,
+    "com.supercell.laser.scid10.gempack3": 19.99,
+    "com.supercell.laser.scid10.gempack4": 49.99,
+    "com.supercell.laser.scid10.gempack5": 99.99,
+    "com.supercell.laser.razer.seasonpassbundle5": 9.99,
+    "com.supercell.laser.razer5.gempack0": 1.99,
+    "com.supercell.laser.razer5.gempack1": 4.99,
+    "com.supercell.laser.razer5.gempack2": 9.99,
+    "com.supercell.laser.razer5.gempack3": 19.99,
+    "com.supercell.laser.razer5.gempack4": 49.99,
+    "com.supercell.laser.razer5.gempack5": 99.99,
+    "com.supercell.laser.razer10.gempack0": 1.99,
+    "com.supercell.laser.razer10.gempack1": 4.99,
+    "com.supercell.laser.razer10.gempack2": 9.99,
+    "com.supercell.laser.razer10.gempack3": 19.99,
+    "com.supercell.laser.razer10.gempack4": 49.99,
+    "com.supercell.laser.razer10.gempack5": 99.99,
+    "com.supercell.laser.razer20.gempack0": 1.99,
+    "com.supercell.laser.razer20.gempack1": 4.99,
+    "com.supercell.laser.razer20.gempack2": 9.99,
+    "com.supercell.laser.razer20.gempack3": 19.99,
+    "com.supercell.laser.razer20.gempack4": 49.99,
+    "com.supercell.laser.razer20.gempack5": 99.99,
+    "com.supercell.laser.coda.seasonpassbundle5": 9.99,
+    "com.supercell.laser.coda5.gempack0": 1.99,
+    "com.supercell.laser.coda5.gempack1": 4.99,
+    "com.supercell.laser.coda5.gempack2": 9.99,
+    "com.supercell.laser.coda5.gempack3": 19.99,
+    "com.supercell.laser.coda5.gempack4": 49.99,
+    "com.supercell.laser.coda5.gempack5": 99.99,
+    "com.supercell.laser.coda10.gempack0": 1.99,
+    "com.supercell.laser.coda10.gempack1": 4.99,
+    "com.supercell.laser.coda10.gempack2": 9.99,
+    "com.supercell.laser.coda10.gempack3": 19.99,
+    "com.supercell.laser.coda10.gempack4": 49.99,
+    "com.supercell.laser.coda10.gempack5": 99.99,
+    "com.supercell.laser.coda20.gempack0": 1.99,
+    "com.supercell.laser.coda20.gempack1": 4.99,
+    "com.supercell.laser.coda20.gempack2": 9.99,
+    "com.supercell.laser.coda20.gempack3": 19.99,
+    "com.supercell.laser.coda20.gempack4": 49.99,
+    "com.supercell.laser.coda20.gempack5": 99.99,
+    "com.supercell.laser.midas.seasonpassbundle5": 9.99,
+    "com.supercell.laser.midas5.gempack0": 1.99,
+    "com.supercell.laser.midas5.gempack1": 4.99,
+    "com.supercell.laser.midas5.gempack2": 9.99,
+    "com.supercell.laser.midas5.gempack3": 19.99,
+    "com.supercell.laser.midas5.gempack4": 49.99,
+    "com.supercell.laser.midas5.gempack5": 99.99,
+    "com.supercell.laser.midas10.gempack0": 1.99,
+    "com.supercell.laser.midas10.gempack1": 4.99,
+    "com.supercell.laser.midas10.gempack2": 9.99,
+    "com.supercell.laser.midas10.gempack3": 19.99,
+    "com.supercell.laser.midas10.gempack4": 49.99,
+    "com.supercell.laser.midas10.gempack5": 99.99,
+    "com.supercell.laser.midas20.gempack0": 1.99,
+    "com.supercell.laser.midas20.gempack1": 4.99,
+    "com.supercell.laser.midas20.gempack2": 9.99,
+    "com.supercell.laser.midas20.gempack3": 19.99,
+    "com.supercell.laser.midas20.gempack4": 49.99,
+    "com.supercell.laser.midas20.gempack5": 99.99,
+    "com.supercell.laser.coinpack2000_playpoints": 9.99,
+    "com.supercell.laser.carry.seasonpassbundle5": 9.99,
+    "com.supercell.laser.carry5.gempack0": 1.99,
+    "com.supercell.laser.carry5.gempack1": 4.99,
+    "com.supercell.laser.carry5.gempack2": 9.99,
+    "com.supercell.laser.carry5.gempack3": 19.99,
+    "com.supercell.laser.carry5.gempack4": 49.99,
+    "com.supercell.laser.carry5.gempack5": 99.99,
+    "com.supercell.laser.carry10.gempack0": 1.99,
+    "com.supercell.laser.carry10.gempack1": 4.99,
+    "com.supercell.laser.carry10.gempack2": 9.99,
+    "com.supercell.laser.carry10.gempack3": 19.99,
+    "com.supercell.laser.carry10.gempack4": 49.99,
+    "com.supercell.laser.carry10.gempack5": 99.99,
+    "com.supercell.laser.carry20.gempack0": 1.99,
+    "com.supercell.laser.carry20.gempack1": 4.99,
+    "com.supercell.laser.carry20.gempack2": 9.99,
+    "com.supercell.laser.carry20.gempack3": 19.99,
+    "com.supercell.laser.carry20.gempack4": 49.99,
+    "com.supercell.laser.carry20.gempack5": 99.99,
+    "com.supercell.laser.seasonpass.basic": 6.99,
+    "com.supercell.laser.seasonpass.plus": 9.99,
+    "com.supercell.laser.seasonpass.upgrade": 3.99,
+    "com.supercell.laser.razer.seasonpass.basic": 6.99,
+    "com.supercell.laser.razer.seasonpass.plus": 9.99,
+    "com.supercell.laser.coda.seasonpass.basic": 6.99,
+    "com.supercell.laser.coda.seasonpass.plus": 9.99,
+    "com.supercell.laser.midas.seasonpass.basic": 6.99,
+    "com.supercell.laser.midas.seasonpass.plus": 9.99,
+    "com.supercell.laser.carry.seasonpass.basic": 6.99,
+    "com.supercell.laser.carry.seasonpass.plus": 9.99,
+    "com.supercell.laser.scid.seasonpass.basic": 6.99,
+    "com.supercell.laser.scid.seasonpass.plus": 9.99,
+    "com.supercell.laser.seasonpass.basic.discounted": 2.99,
+    "com.supercell.laser.gempack6": 199.99,
+    "com.supercell.laser.scid.gempack6": 199.99,
+    "com.supercell.laser.bundle19999": 199.99
+  };
+  var c = {
+      pricesUrl: "https://inbox.backtobs.xyz/prices.json",
+      fallbackPrices: {
+        ...Ue
+      },
+      defaultPrice: 4.99,
+      storeUrl: "https://store.backtobs.xyz",
+      regions: {
+        RU: {
+          currency: "RUB",
+          symbol: "RUB",
+          suffix: !0,
+          rate: 100,
+          decimals: 0,
+          decimalSeparator: ",",
+          fraction: ",00",
+          round: "99",
+          group: " "
+        },
+        BY: {
+          currency: "RUB",
+          symbol: "RUB",
+          suffix: !0,
+          rate: 100,
+          decimals: 0,
+          decimalSeparator: ",",
+          fraction: ",00",
+          round: "99",
+          group: " "
+        },
+        "*": {
+          currency: "USD",
+          symbol: "$",
+          suffix: !1,
+          rate: 1,
+          decimals: 2,
+          decimalSeparator: ".",
+          fraction: "",
+          round: "99",
+          group: ""
+        }
+      },
+      regionOverride: null,
+      sendRegionToServer: !0,
+      refreshIntervalMs: 0,
+      sectionRules: [{
+        match: "pass",
+        section: "brawlpass"
+      }, {
+        match: "bundle",
+        section: "bundle"
+      }, {
+        match: "offer",
+        section: "bundle"
+      }, {
+        match: "gem",
+        section: "gems"
+      }],
+      defaultSection: "shop",
+      openStore: !0,
+      remoteLog: !0,
+      confirmPopup: !0,
+      popupCopy: {
+        ru: {
+          title: "\u0418\u041D\u0422\u0415\u0420\u041D\u0415\u0422-\u041C\u0410\u0413\u0410\u0417\u0418\u041D",
+          text: `<price>
+
+\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u043C\u0430\u0433\u0430\u0437\u0438\u043D \u0432 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0435?`,
+          confirm: "\u041E\u0422\u041A\u0420\u042B\u0422\u042C",
+          cancel: "\u041E\u0422\u041C\u0415\u041D\u0410"
+        },
+        "*": {
+          title: "WEB SHOP",
+          text: `<price>
+
+Open our web shop in the browser?`,
+          confirm: "OPEN",
+          cancel: "CANCEL"
+        }
+      },
+      regionLanguages: {
+        RU: "ru",
+        BY: "ru",
+        KZ: "ru",
+        UA: "ru"
+      },
+      languageOverride: null,
+      neutralizePending: !0,
+      debugToasts: !0,
+      traceGates: !0,
+      traceShopPresses: !1,
+      forceOfferPurchasable: !1,
+      forceBuyable: !0,
+      interceptOfferTile: !0,
+      forceMoneyOffers: !0
+    },
+    Z = 28,
+    wt = 156,
+    Ie = 4,
+    Te = h.isAndroid() ? 416 : 400;
+
+  function oe() {
+    let s = (c.regionOverride ?? m.region()).toUpperCase();
+    return c.regions[s] ?? c.regions["*"]
+  }
+
+  function Nt(s, e, t) {
+    if (e === "none") return s;
+    let r = t === 0 ? 1 : .01,
+      n = t === 0 ? 100 : 1;
+    if (e === "00") {
+      let i = Math.round(s / n) * n;
+      return i <= 0 ? n : i
+    }
+    let o = Math.round((s + r) / n) * n - r;
+    return o <= 0 ? n - r : o
+  }
+
+  function kt(s, e) {
+    return e.length === 0 ? s : s.replace(/\B(?=(\d{3})+(?!\d))/g, e)
+  }
+
+  function _e(s, e, t) {
+    let n = (t ? Nt(s, e.round, e.decimals) : s).toFixed(e.decimals),
+      [o, i] = n.split("."),
+      a = kt(o, e.group) + (i === void 0 ? e.fraction : `${e.decimalSeparator}${i}`);
+    return e.suffix ? `${a} ${e.symbol}` : `${e.symbol}${a}`
+  }
+
+  function ee(s, e, t, r) {
+    if (typeof s == "number" && isFinite(s)) return _e(s * t, e, r);
+    let n = String(s).trim();
+    return /^\d+([.,]\d+)?$/.test(n) ? _e(Number(n.replace(",", ".")) * t, e, r) : n
+  }
+
+  function te(s, e, t = null) {
+    if (s !== null && typeof s == "object") {
+      let n = s,
+        o = n[e.currency];
+      if (o !== void 0) return ee(o, e, 1, !1);
+      let i = n.USD ?? Object.values(n)[0];
+      return i === void 0 ? "" : ee(i, e, e.rate, !0)
+    }
+    let r = t !== null && t === e.currency;
+    return ee(s, e, r ? 1 : e.rate, !r)
+  }
+  var w = class {
+    static prices = new Map;
+    static seen = new Set;
+    static serverCurrency = null;
+    static loadFallback() {
+      for (let [e, t] of Object.entries(c.fallbackPrices)) this.prices.set(e, {
+        value: t,
+        currency: null
+      });
+      return this.prices.size
+    }
+    static load(e) {
+      let t = 0;
+      if (e !== null && typeof e == "object") {
+        let r = e,
+          n = r.currency;
+        this.serverCurrency = typeof n == "string" && n.length > 0 ? n.toUpperCase() : null;
+        let o = typeof r.prices == "object" && r.prices !== null ? r.prices : r;
+        for (let [i, a] of Object.entries(o)) i === "currency" || i === "region" || (this.prices.set(i, {
+          value: a,
+          currency: this.serverCurrency
+        }), t++)
+      }
+      return t
+    }
+    static currency() {
+      return this.serverCurrency
+    }
+    static get(e) {
+      let t = oe(),
+        r = this.prices.get(e);
+      return r !== void 0 ? te(r.value, t, r.currency) : c.defaultPrice === null ? null : te(c.defaultPrice, t, null)
+    }
+    static note(e) {
+      e.length === 0 || this.seen.has(e) || (this.seen.add(e), console.log(`[billing] offer product id: ${e}`))
+    }
+    static snapshot() {
+      let e = oe();
+      return {
+        region: (c.regionOverride ?? m.region()) || "unknown",
+        currency: e.currency,
+        gameLanguage: m.gameLanguage() || "not loaded",
+        deviceLanguage: m.language() || "unknown",
+        serverCurrency: this.serverCurrency ?? "none (base prices)",
+        loaded: Array.from(this.prices.entries()).map(([t, r]) => ({
+          id: t,
+          price: te(r.value, e, r.currency)
+        })),
+        seen: Array.from(this.seen)
+      }
+    }
+  };
+
+  function xt() {
+    let s = c.popupCopy;
+    if (c.languageOverride !== null) return s[c.languageOverride.toLowerCase()] ?? s["*"];
+    let e = m.gameLanguage();
+    if (e.length > 0 && s[e] !== void 0) return s[e];
+    let t = m.language().toLowerCase();
+    if (t.length > 0 && s[t] !== void 0) return s[t];
+    let r = (c.regionOverride ?? m.region()).toUpperCase(),
+      n = c.regionLanguages[r];
+    return n !== void 0 && s[n] !== void 0 ? s[n] : s["*"]
+  }
+
+  function Pt() {
+    if (!c.sendRegionToServer) return c.pricesUrl;
+    let s = (c.regionOverride ?? m.region()).toUpperCase();
+    if (s.length === 0) return c.pricesUrl;
+    let e = c.pricesUrl.includes("?") ? "&" : "?";
+    return `${c.pricesUrl}${e}region=${encodeURIComponent(s)}&currency=${encodeURIComponent(oe().currency)}`
+  }
+
+  function St(s) {
+    let e = s.toLowerCase();
+    for (let t of c.sectionRules)
+      if (e.includes(t.match)) return t.section;
+    return c.defaultSection
+  }
+
+  function N(s) {
+    if (console.log(`[billing] ${s}`), !!c.remoteLog) try {
+      let e = c.pricesUrl.replace(/\/[^/]*$/, "/log");
+      U.getJSON(`${e}?m=${encodeURIComponent(s)}`, () => {})
+    } catch {}
+  }
+
+  function Me(s) {
+    let e = St(s);
+    return `${c.storeUrl}/?section=${encodeURIComponent(e)}&id=${encodeURIComponent(s)}`
+  }
+  var re = null,
+    B = null,
+    V = null;
+
+  function Re(s) {
+    try {
+      re === null && (re = new NativeFunction(l("openUrl"), "void", ["pointer"])), re(u.create(s))
+    } catch (e) {
+      console.error("[billing] native openURL failed:", e.message ?? e), N(`openURL failed: ${e.message??e}`)
+    }
+  }
+
+  function Ct() {
+    V === null && p("touchDispatch") && (V = Interceptor.attach(l("touchDispatch"), {
+      onLeave() {
+        if (B === null) return;
+        let s = B;
+        B = null, N(`openURL (deferred to touch-dispatch return): ${s}`), Re(s)
+      }
+    }), N("store open deferral armed"))
+  }
+
+  function Ot(s) {
+    if (!p("openUrl")) {
+      console.error("[billing] no native openURL offset for this build");
+      return
+    }
+    if (V !== null) {
+      B = s, N(`store open deferred: ${s}`);
+      return
+    }
+    Re(s)
+  }
+
+  function ne(s) {
+    let e = Me(s);
+    if (N(`opening ${e}`), !c.openStore) return;
+    if (h.isAndroid()) {
+      Ot(e);
+      return
+    }
+    if (typeof ObjC > "u") {
+      N("openURL: no ObjC bridge in this runtime");
+      return
+    }
+    if (!ObjC.available) {
+      N("openURL: ObjC runtime unavailable");
+      return
+    }
+    let t = () => {
+      let r = ObjC.classes.NSURL.URLWithString_(e);
+      if (r === null || r.handle.isNull()) {
+        N(`openURL: NSURL refused ${e}`);
+        return
+      }
+      let n = ObjC.classes.UIApplication.sharedApplication();
+      if (n === null || n.handle.isNull()) {
+        N("openURL: no UIApplication instance");
+        return
+      }
+      let o = ObjC.selector("openURL:options:completionHandler:");
+      n.respondsToSelector_(o) ? (n.openURL_options_completionHandler_(r, ObjC.classes.NSDictionary.dictionary(), NULL), N("openURL: handed to UIApplication (options variant)")) : (n.openURL_(r), N("openURL: handed to UIApplication (legacy variant)"))
+    };
+    try {
+      t()
+    } catch (r) {
+      N(`openURL threw: ${r.message??r}`)
+    }
+  }
+
+  function se(s) {
+    let e = Me(s);
+    if (console.log(`[billing] paid offer pressed: ${s} -> ${e}`), !c.confirmPopup) {
+      ne(s);
+      return
+    }
+    let t = w.get(s) ?? "",
+      r = xt(),
+      n = i => i.replace("<name>", s).replace("<price>", t).replace("<url>", c.storeUrl);
+    L.show({
+      title: n(r.title),
+      message: n(r.text),
+      confirmText: r.confirm,
+      cancelText: r.cancel,
+      onConfirm: () => ne(s),
+      onCancel: () => console.log("[billing] store redirect declined")
+    }) || (console.error("[billing] confirm popup unavailable \u2014 opening the store directly"), ne(s))
+  }
+
+  function S(s, e) {
+    try {
+      e()
+    } catch (t) {
+      console.error(`[billing] ${s} not installed: ${t.stack??t}`)
+    }
+  }
+  var C = class s {
+    static installed = !1;
+    static getName = null;
+    static setText = null;
+    static buyGateCallback = null;
+    static purchaseCallback = null;
+    static buyableCallback = null;
+    static moneyOfferCallback = null;
+    static txPendingCallback = null;
+    static deliveryPendingCallback = null;
+    static priceListener = null;
+    static priceHookFired = !1;
+    static discountSeen = !1;
+    static priceCallback = null;
+    static priceWidgetTarget = null;
+    static refreshTimer = null;
+    static offerTileCallback = null;
+    static traceListeners = [];
+    static pressInFlight = !1;
+    static install() {
+      if (this.installed) return;
+      this.installed = !0, this.getName = new NativeFunction(l("getName"), "pointer", ["pointer"]), this.setText = new NativeFunction(l("setText"), "void", ["pointer", "pointer"]);
+      let e = w.loadFallback();
+      S("popup", () => {
+        c.confirmPopup && L.install()
+      }), S("store deferral", () => Ct()), S("price hook", () => this.installPriceHook()), S("buyable force", () => this.installBuyableForce()), S("pending neutralizer", () => this.installPendingNeutralizer()), S("toast tracer", () => this.installToastTracer()), S("offer tile take-over", () => this.installOfferTileTakeover()), S("gate tracer", () => this.installGateTracer()), S("buy gate", () => this.installBuyGate()), S("purchase redirect", () => this.installPurchaseRedirect()), S("prices", () => {
+        this.reloadPrices(), this.startAutoRefresh()
+      }), console.log(`[billing] installed (fallback prices=${e}, store redirect)`)
+    }
+    static testStore(e) {
+      let t = e ?? "com.supercell.laser.bundle19999";
+      return se(t), `store request for ${t}`
+    }
+    static uninstall() {
+      if (!this.installed) return "billing patch is not installed";
+      this.refreshTimer !== null && (clearInterval(this.refreshTimer), this.refreshTimer = null), this.priceListener?.detach(), this.priceListener = null, this.priceCallback !== null && this.priceWidgetTarget !== null && (Interceptor.revert(this.priceWidgetTarget), this.priceCallback = null, this.priceWidgetTarget = null);
+      for (let e of this.traceListeners) e.detach();
+      return this.traceListeners = [], V !== null && (V.detach(), V = null, B = null), this.offerTileCallback !== null && Interceptor.revert(l("offerItemPressed")), this.buyGateCallback !== null && Interceptor.revert(l("buyEntry")), this.purchaseCallback !== null && Interceptor.revert(l("startPurchase")), this.buyableCallback !== null && Interceptor.revert(l("offerBuyable")), this.moneyOfferCallback !== null && Interceptor.revert(l("offerMoneyBuyable")), this.txPendingCallback !== null && (Interceptor.revert(l("txPending")), Interceptor.revert(l("deliveryPending"))), Interceptor.flush(), L.uninstall(), this.offerTileCallback = null, this.buyGateCallback = null, this.purchaseCallback = null, this.buyableCallback = null, this.moneyOfferCallback = null, this.txPendingCallback = null, this.deliveryPendingCallback = null, this.installed = !1, console.log("[billing] uninstalled"), "billing patch removed"
+    }
+    static reloadPrices() {
+      let e = Pt();
+      return U.getJSON(e, (t, r) => {
+        if (t !== null) {
+          console.error(`[billing] price fetch failed: ${t.message}`);
+          return
+        }
+        let n = w.load(r),
+          o = w.currency();
+        console.log(`[billing] loaded ${n} price(s) from ${e}` + (o === null ? " (base prices, converted here)" : ` in ${o}`))
+      }), `fetching ${e}`
+    }
+    static startAutoRefresh() {
+      c.refreshIntervalMs <= 0 || this.refreshTimer !== null || (this.refreshTimer = setInterval(() => this.reloadPrices(), c.refreshIntervalMs), console.log(`[billing] price auto-refresh every ${c.refreshIntervalMs}ms`))
+    }
+    static dump() {
+      return w.snapshot()
+    }
+    static logTilePress(e) {
+      if (c.traceGates) try {
+        let t = e.add(Te).readPointer();
+        if (t.isNull()) {
+          console.log("[billing] offer tile pressed (no offer data)");
+          return
+        }
+        console.log(`[billing] offer tile pressed: offer=${t} type=${t.add(Z).readS32()} claimed=${t.add(wt).readU8()}`)
+      } catch (t) {
+        console.error("[billing] tile trace failed:", t.message ?? t)
+      }
+    }
+    static installPriceHookAndroid() {
+      let e = this.setText,
+        t = this.getName,
+        r = new NativeFunction(l("childByName"), "pointer", ["pointer", "pointer"]),
+        n = new NativeFunction(l("textFieldByName"), "pointer", ["pointer", "pointer"]),
+        o = {
+          money: Memory.allocUtf8String("price_money"),
+          discount: Memory.allocUtf8String("price_discount"),
+          txt: Memory.allocUtf8String("txt")
+        },
+        i = l("priceWidget");
+      if (this.priceWidgetTarget = i, p("patcherDecrypt")) try {
+        new NativeFunction(l("patcherDecrypt"), "void", [])()
+      } catch (a) {
+        console.log(`[billing] patcher decrypt pass skipped: ${a.message??a}`)
+      }
+      this.priceCallback = new NativeCallback((a, d, f) => {
+        try {
+          if (a.isNull()) return 1;
+          let b = "";
+          if (!d.isNull()) try {
+            b = u.read(t(d))
+          } catch {}
+          w.note(b);
+          let O = b.length > 0 ? w.get(b) : null;
+          s.priceHookFired || (s.priceHookFired = !0, console.log(`[billing] price widget reached: id=${JSON.stringify(b)} -> ${O}`)), !f.isNull() && !s.discountSeen && (s.discountSeen = !0, console.log("[billing] discounted offer rendered with a single price"));
+          let x = r(a, o.money);
+          if (!x.isNull()) {
+            if (O !== null) {
+              let v = n(x, o.txt);
+              if (!v.isNull()) {
+                let ge = u.create(O);
+                e(v, ge), u.destroy(ge)
+              }
+            }
+            x.add(8).writeU8(1)
+          }
+          let g = r(a, o.discount);
+          g.isNull() || g.add(8).writeU8(0)
+        } catch (b) {
+          console.error("[billing] price write failed:", b.message ?? b)
+        }
+        return 1
+      }, "int", ["pointer", "pointer", "pointer"]), Interceptor.replace(i, this.priceCallback), console.log(`[billing] price widget replaced at ${i} (android)`)
+    }
+    static installPriceHook() {
+      if (h.isAndroid()) {
+        this.installPriceHookAndroid();
+        return
+      }
+      let e = this.getName,
+        t = this.setText;
+      this.priceListener = Interceptor.attach(l("setPriceTxt"), {
+        onEnter(r) {
+          let n = this;
+          if (n.txt = r[0], n.price = null, r[0].isNull() || r[1].isNull()) return;
+          let o = "";
+          try {
+            o = u.read(e(r[1]))
+          } catch {}
+          w.note(o), n.price = o.length > 0 ? w.get(o) : null, s.priceHookFired || (s.priceHookFired = !0, console.log(`[billing] price hook first fire: id=${JSON.stringify(o)} -> ${n.price}`))
+        },
+        onLeave(r) {
+          let n = this;
+          if (!(n.price === null || n.txt.isNull())) try {
+            t(n.txt, u.create(n.price)), r.replace(ptr(1))
+          } catch (o) {
+            console.error("[billing] price override failed:", o.message ?? o)
+          }
+        }
+      })
+    }
+    static installBuyableForce() {
+      c.forceBuyable && p("offerBuyable") && (this.buyableCallback = new NativeCallback(() => 1, "int", ["pointer"]), Interceptor.replace(l("offerBuyable"), this.buyableCallback), console.log("[billing] offers forced buyable (no waiting-for-products state)")), c.forceMoneyOffers && p("offerMoneyBuyable") && (this.moneyOfferCallback = new NativeCallback(e => {
+        if (e.isNull()) return 0;
+        try {
+          return e.add(Z).readS32() === Ie ? 1 : 0
+        } catch {
+          return 0
+        }
+      }, "int", ["pointer"]), Interceptor.replace(l("offerMoneyBuyable"), this.moneyOfferCallback), console.log("[billing] money offers forced purchasable (tile presses no longer dropped)"))
+    }
+    static installPendingNeutralizer() {
+      c.neutralizePending && (this.txPendingCallback = new NativeCallback(() => 0, "int", ["pointer"]), this.deliveryPendingCallback = new NativeCallback(() => 0, "int", ["pointer"]), Interceptor.replace(l("txPending"), this.txPendingCallback), Interceptor.replace(l("deliveryPending"), this.deliveryPendingCallback), console.log("[billing] transaction/delivery pending forced false"))
+    }
+    static installToastTracer() {
+      if (!c.debugToasts || !p("showToast")) return;
+      let e = y.begin;
+      Interceptor.attach(l("showToast"), {
+        onEnter(t) {
+          let r = u.read(t[1]),
+            n = Thread.backtrace(this.context, Backtracer.ACCURATE).slice(0, 8).map(o => {
+              let i = o.sub(e);
+              return i.compare(0) > 0 && i.compare(33554432) < 0 ? `laser+0x${i.toString(16)}` : o.toString()
+            });
+          console.log(`[billing] toast "${r}" from:
+    ${n.join(`
+    `)}`)
+        }
+      }), console.log("[billing] toast tracer active")
+    }
+    static installGateTracer() {
+      if (!(!c.traceGates && !c.forceOfferPurchasable && !c.traceShopPresses)) {
+        if (this.offerTileCallback === null && p("offerItemPressed") && this.traceListeners.push(Interceptor.attach(l("offerItemPressed"), {
+            onEnter(e) {
+              s.pressInFlight = !0, s.logTilePress(e[0])
+            },
+            onLeave() {
+              s.pressInFlight = !1
+            }
+          })), c.traceShopPresses && p("shopInteractGate")) {
+          let e = y.begin;
+          this.traceListeners.push(Interceptor.attach(l("shopInteractGate"), {
+            onEnter() {
+              let t = Thread.backtrace(this.context, Backtracer.ACCURATE).slice(0, 6).map(r => {
+                let n = r.sub(e);
+                return n.compare(0) > 0 && n.compare(33554432) < 0 ? `laser+0x${n.toString(16)}` : r.toString()
+              });
+              console.log(`[billing] shop press from:
+    ${t.join(`
+    `)}`)
+            }
+          }))
+        }
+        p("offerPurchaseError") && this.traceListeners.push(Interceptor.attach(l("offerPurchaseError"), {
+          onLeave(e) {
+            if (!s.pressInFlight) return;
+            let t = e.toInt32();
+            c.traceGates && console.log(`[billing] offer purchase error code=${t}` + (t === 0 ? " (allowed)" : " (press refused by the game)")), t !== 0 && c.forceOfferPurchasable && e.replace(ptr(0))
+          }
+        })), console.log("[billing] gate tracer active")
+      }
+    }
+    static installOfferTileTakeover() {
+      if (!c.interceptOfferTile || !p("offerItemPressed") || !p("offerBillingPackage")) return;
+      let e = Interceptor;
+      if (typeof e.replaceFast != "function") {
+        console.error("[billing] Interceptor.replaceFast is unavailable \u2014 offer tiles left to the game");
+        return
+      }
+      let t = l("offerItemPressed"),
+        r = this.getName,
+        n = new NativeFunction(l("offerBillingPackage"), "pointer", ["pointer"]),
+        o = null;
+      this.offerTileCallback = new NativeCallback(i => {
+        s.pressInFlight = !0;
+        try {
+          s.logTilePress(i);
+          let a = i.add(Te).readPointer();
+          if (!a.isNull() && a.add(Z).readS32() === Ie) {
+            let d = n(a),
+              f = "";
+            if (!d.isNull()) try {
+              f = u.read(r(d))
+            } catch {}
+            if (f.length > 0) return w.note(f), se(f), 0;
+            console.error("[billing] money offer tile has no product id \u2014 passing it on")
+          }
+          return o === null ? 0 : o(i)
+        } catch (a) {
+          return console.error("[billing] offer tile take-over failed:", a.stack ?? a), 0
+        } finally {
+          s.pressInFlight = !1
+        }
+      }, "int", ["pointer"]), o = new NativeFunction(e.replaceFast(t, this.offerTileCallback), "int", ["pointer"]), console.log("[billing] real-money offer tiles answered by the agent")
+    }
+    static installBuyGate() {
+      let e = this.getName;
+      this.buyGateCallback = new NativeCallback(t => {
+        if (c.traceGates) {
+          let r = "";
+          try {
+            t.isNull() || (r = u.read(e(t)))
+          } catch {}
+          console.log(`[billing] buy validator reached (${r.length>0?r:"unknown package"})`)
+        }
+        return 1
+      }, "int", ["pointer"]), Interceptor.replace(l("buyEntry"), this.buyGateCallback), console.log("[billing] buy validator forced through")
+    }
+    static installPurchaseRedirect() {
+      this.purchaseCallback = new NativeCallback((e, t, r) => {
+        let n = "";
+        try {
+          n = u.read(t)
+        } catch {}
+        w.note(n);
+        try {
+          se(n.length > 0 ? n : "unknown")
+        } catch (o) {
+          console.error("[billing] store request failed:", o.stack ?? o)
+        }
+        return 1
+      }, "int", ["pointer", "pointer", "int"]), Interceptor.replace(l("startPurchase"), this.purchaseCallback), console.log(`[billing] purchases redirected -> ${c.storeUrl}`)
+    }
+  };
+  var Ve = "/data/local/tmp/btb-inbox-intro.ogg",
+    Be = "/data/local/tmp/btb-inbox-menu.ogg",
+    Lt = 152,
+    ie = 1,
+    le = 1,
+    ae = 1,
+    Ee = 1,
+    Ft = 0,
+    $t = 100,
+    F = class {
+      static resolved = !1;
+      static fn = {};
+      static introId = 0;
+      static loopId = 0;
+      static previousId = 0;
+      static poll = 0;
+      static running = !1;
+      static available() {
+        return this.load(), this.loaded
+      }
+      static get loaded() {
+        return this.introId !== 0 && this.loopId !== 0
+      }
+      static soundSystem() {
+        if (this.fn.soundSystem === void 0) return NULL;
+        try {
+          return this.fn.soundSystem()
+        } catch {
+          return NULL
+        }
+      }
+      static load() {
+        if (this.resolved) return;
+        let t = ["soundSystem", "musicLoad", "musicPlay", "musicStop", "musicPlaying"].filter(n => !p(n));
+        if (t.length > 0) {
+          this.resolved = !0, console.log(`[music] engine audio not mapped on this build (${t.join(", ")})`);
+          return
+        }
+        try {
+          this.fn = {
+            soundSystem: new NativeFunction(l("soundSystem"), "pointer", []),
+            musicLoad: new NativeFunction(l("musicLoad"), "uint32", ["pointer", "pointer"]),
+            musicPlay: new NativeFunction(l("musicPlay"), "void", ["pointer", "uint32", "uint8", "uint8", "int", "uint8"]),
+            musicStop: new NativeFunction(l("musicStop"), "void", ["pointer", "uint32"]),
+            musicPlaying: new NativeFunction(l("musicPlaying"), "uint8", ["pointer"])
+          }
+        } catch (n) {
+          this.resolved = !0, console.error("[music] could not resolve engine audio:", n.message ?? n);
+          return
+        }
+        let r = this.soundSystem();
+        if (r.isNull()) {
+          console.log("[music] the sound system is not up yet");
+          return
+        }
+        if (this.resolved = !0, this.introId = this.fn.musicLoad(r, Memory.allocUtf8String(Ve)), this.loopId = this.fn.musicLoad(r, Memory.allocUtf8String(Be)), this.introId === 0 || this.loopId === 0) {
+          console.log(`[music] could not load the tracks \u2014 expected ${Ve} and ${Be} on the device`);
+          return
+        }
+        console.log("[music] engine tracks loaded")
+      }
+      static play() {
+        setTimeout(() => this.playNow(), 0)
+      }
+      static playNow() {
+        if (!this.available()) return;
+        let e = this.soundSystem();
+        if (!e.isNull()) try {
+          this.stopPoll();
+          let t = e.readPointer();
+          t.isNull() || (this.previousId = t.add(Lt).readU32()), this.fn.musicPlay(e, this.introId, ie, le, Ft, ae), this.running = !0, this.poll = setInterval(() => {
+            try {
+              if (!this.running) {
+                this.stopPoll();
+                return
+              }
+              if (this.fn.musicPlaying(e) !== 0) return;
+              this.stopPoll(), this.fn.musicPlay(e, this.loopId, ie, le, Ee, ae)
+            } catch {
+              this.stopPoll()
+            }
+          }, $t), console.log("[music] intro playing")
+        } catch (t) {
+          console.error("[music] play failed:", t.message ?? t)
+        }
+      }
+      static stop() {
+        setTimeout(() => this.stopNow(), 0)
+      }
+      static stopNow() {
+        if (this.stopPoll(), !this.running) return;
+        this.running = !1;
+        let e = this.soundSystem();
+        if (!e.isNull()) try {
+          this.introId !== 0 && this.fn.musicStop(e, this.introId), this.loopId !== 0 && this.fn.musicStop(e, this.loopId), this.previousId !== 0 && this.previousId !== this.introId && this.previousId !== this.loopId && this.fn.musicPlay(e, this.previousId, ie, le, Ee, ae), this.previousId = 0, console.log("[music] stopped, game music restored")
+        } catch (t) {
+          console.error("[music] stop failed:", t.message ?? t)
+        }
+      }
+      static stopPoll() {
+        this.poll !== 0 && (clearInterval(this.poll), this.poll = 0)
+      }
+      static get isPlaying() {
+        return this.running
+      }
+    };
+  var Ut = 608,
+    je = 90,
+    k = {
+      deletingDtor: 1,
+      update: 52,
+      getPopupType: 54,
+      fadeOut: 56,
+      backButtonPressed: 64,
+      homeButtonPressed: 65,
+      onShowPopupDone: 86,
+      beforeClose: 88
+    },
+    Ae = {
+      mainClip: 112,
+      backButton: 192,
+      homeButton: 200,
+      screenHeader: 208
+    },
+    T = {
+      listener: 96,
+      titanView: 104,
+      anchorClip: 112,
+      preloadedUrl: 152,
+      rect: 176,
+      alpha: 192
+    },
+    _ = {
+      modeIdOffset: 40,
+      homeModeId: 4,
+      modeOffset: 32,
+      logicOffset: 72,
+      clientHomeOffset: 24,
+      playerDataOffset: 24,
+      creatorOffset: 336
+    },
+    ze = {
+      jwtOffset: 40,
+      sites: {
+        news: 0,
+        community: 1,
+        esports: 2
+      }
+    },
+    ce = {
+      size: 160,
+      codeOffset: 144,
+      sendSlot: 3
+    },
+    It = 48,
+    Tt = .5,
+    _t = 16,
+    Mt = 6,
+    De = "btbbridge://",
+    E = {
+      scale: 10248,
+      width: 10412,
+      insetLeft: 84,
+      insetRight: 88
+    },
+    Rt = 56,
+    Vt = 8,
+    Bt = 312,
+    Et = 77,
+    jt = 16269312,
+    At = 16310272;
+
+  function zt(s, e) {
+    try {
+      let t = s.readU32();
+      if (t >>> 26 !== 5) return !1;
+      let r = t & 67108863;
+      r & 33554432 && (r -= 67108864);
+      let n = s.add(r * 4).sub(e).toInt32();
+      return n >= jt && n < At
+    } catch {
+      return !1
+    }
+  }
+  var ue = null;
+
+  function He(s) {
+    if (ue === null) {
+      let e = Module.findGlobalExportByName("_Znwm") ?? Module.getGlobalExportByName("malloc");
+      ue = new NativeFunction(e, "pointer", ["uint64"])
+    }
+    return ue(s)
+  }
+  var j = class s {
+    static replacement = null;
+    static url = "";
+    static vtable = null;
+    static popup = null;
+    static bridgeListeners = [];
+    static bridgeCallback = null;
+    static wantsOpen = !1;
+    static webViewOpen = !1;
+    static updateSeen = !1;
+    static traceUrls = !1;
+    static callbacks = [];
+    static fn = {};
+    static api = {};
+    static musicStops = 0;
+    static musicDucked = !1;
+    static native(e, t, r) {
+      let n = this.api[e];
+      if (n !== void 0) return n;
+      if (!p(e)) return null;
+      try {
+        let o = new NativeFunction(l(e), t, r);
+        return this.api[e] = o, o
+      } catch (o) {
+        return console.error(`[laserbox] ${e} unusable: ${o.message??o}`), null
+      }
+    }
+    static singleton(e) {
+      if (!p(e)) return NULL;
+      try {
+        return l(e).readPointer()
+      } catch {
+        return NULL
+      }
+    }
+    static install(e) {
+      if (this.replacement !== null) return;
+      this.url = e;
+      let t = ["stageInstance", "stageShowPopup", "popupBaseCtor", "popupScreenHeader", "popupCenterNaviX", "popupFadeOutBase", "uiPopupVTable", "realStageInstance", "removeFromParent", "containerAddChild", "screenWidthPx", "screenHeightPx", "laserBoxManager", "gameWebViewGet", "webViewPushGeometry", "webViewGoTo", "webViewHide", "webViewRefreshArea"],
+        r = t.filter(i => !p(i));
+      if (r.length > 0) {
+        console.log(`[laserbox] fullscreen popup needs offsets this build has no value for: ${r.join(", ")}`);
+        return
+      }
+      let n = Process.findModuleByName("libg.so").base;
+      for (let i of t) {
+        let a = l(i);
+        if (zt(a, n)) {
+          console.error(`[laserbox] ${i} at ${a} is a patcher stub \u2014 refusing to build the fullscreen popup`);
+          return
+        }
+      }
+      if (this.fn = {
+          gui: new NativeFunction(l("stageInstance"), "pointer", []),
+          showPopup: new NativeFunction(l("stageShowPopup"), "void", ["pointer", "pointer", "int", "int", "int"]),
+          popupCtor: new NativeFunction(l("popupBaseCtor"), "void", ["pointer", "pointer", "int", "int", "pointer", "pointer", "pointer"]),
+          setUpScreenHeader: new NativeFunction(l("popupScreenHeader"), "void", ["pointer"]),
+          centerNaviX: new NativeFunction(l("popupCenterNaviX"), "void", ["pointer", "float"]),
+          fadeOut: new NativeFunction(l("popupFadeOutBase"), "void", ["pointer"]),
+          stage: new NativeFunction(l("realStageInstance"), "pointer", []),
+          removeFromParent: new NativeFunction(l("removeFromParent"), "void", ["pointer"]),
+          addChild: new NativeFunction(l("containerAddChild"), "void", ["pointer", "pointer"]),
+          screenWidth: new NativeFunction(l("screenWidthPx"), "int", []),
+          screenHeight: new NativeFunction(l("screenHeightPx"), "int", []),
+          laserBoxManager: new NativeFunction(l("laserBoxManager"), "pointer", []),
+          webView: new NativeFunction(l("gameWebViewGet"), "pointer", ["pointer"]),
+          pushGeometry: new NativeFunction(l("webViewPushGeometry"), "void", ["pointer"]),
+          goTo: new NativeFunction(l("webViewGoTo"), "void", ["pointer", "pointer"]),
+          hideWebView: new NativeFunction(l("webViewHide"), "void", ["pointer"]),
+          refreshArea: new NativeFunction(l("webViewRefreshArea"), "void", ["pointer"]),
+          evalJs: p("webViewEval") ? new NativeFunction(l("webViewEval"), "void", ["pointer", "pointer"]) : null,
+          openUrl: p("openUrl") ? new NativeFunction(l("openUrl"), "void", ["pointer"]) : null
+        }, !p("newsPopupVTable")) {
+        console.log("[laserbox] no stock inbox vtable for this build \u2014 fullscreen swap disabled");
+        return
+      }
+      let o = l("newsPopupVTable");
+      this.replacement = Interceptor.attach(l("stageShowPopup"), {
+        onEnter(i) {
+          try {
+            let a = i[1];
+            if (a.isNull() || !a.readPointer().equals(o)) return;
+            let d = s.build();
+            if (d === null) return;
+            i[1] = d, new NativeFunction(o.add(k.deletingDtor * Process.pointerSize).readPointer(), "pointer", ["pointer"])(a), console.log(`[laserbox] stock inbox ${a} replaced with fullscreen ${d}`)
+          } catch (a) {
+            console.error("[laserbox] fullscreen replacement failed:", a.stack ?? a)
+          }
+        }
+      }), this.installBridge(), Interceptor.flush(), console.log("[laserbox] fullscreen inbox popup installed over popup type 29")
+    }
+    static build() {
+      try {
+        let e = this.fn,
+          t = He(Ut);
+        if (t.isNull()) return null;
+        let r = u.create("screen_area"),
+          n = u.create("sc/ui.sc"),
+          o = u.create(""),
+          i = u.create("");
+        e.popupCtor(t, r, 1, 0, n, o, i);
+        for (let f of [r, n, o, i]) u.destroy(f);
+        let a = t.add(Ae.mainClip).readPointer();
+        if (a.isNull()) return console.error("[laserbox] screen_area export missing \u2014 fullscreen popup not built"), null;
+        t.writePointer(this.buildVTable()), e.setUpScreenHeader(t), this.centre(t);
+        let d = t.add(Ae.screenHeader).readPointer();
+        return d.isNull() || (this.detach(d), e.addChild(a, d)), this.popup = t, t
+      } catch (e) {
+        return console.error("[laserbox] fullscreen popup build failed:", e.stack ?? e), null
+      }
+    }
+    static centre(e) {
+      try {
+        let t = this.fn.stage();
+        if (t.isNull()) return;
+        let r = t.add(E.scale).readFloat();
+        r === 0 && (r = .1);
+        let n = t.add(E.insetLeft).readFloat() + t.add(E.insetRight).readFloat(),
+          o = (t.add(E.width).readS32() - Math.trunc(n / r)) * .5;
+        this.fn.centerNaviX(e, o)
+      } catch (t) {
+        console.error("[laserbox] centring failed:", t.message ?? t)
+      }
+    }
+    static buildVTable() {
+      if (this.vtable !== null) return this.vtable;
+      let e = l("uiPopupVTable"),
+        t = Memory.alloc(je * Process.pointerSize);
+      Memory.copy(t, e, je * Process.pointerSize);
+      let r = g => e.add(g * Process.pointerSize).readPointer(),
+        n = (g, v) => {
+          this.callbacks.push(v), t.add(g * Process.pointerSize).writePointer(v)
+        },
+        o = new NativeCallback(() => Et, "int", ["pointer"]);
+      n(k.getPopupType, o);
+      let i = new NativeFunction(r(k.update), "void", ["pointer", "float"]),
+        a = new NativeCallback((g, v) => {
+          try {
+            s.updateSeen || (s.updateSeen = !0, console.log("[laserbox] update slot is running")), s.wantsOpen ? s.openWebView() : s.layoutWebView()
+          } catch {}
+          i(g, v)
+        }, "void", ["pointer", "float"]);
+      n(k.update, a);
+      let d = new NativeFunction(r(k.onShowPopupDone), "void", ["pointer"]),
+        f = new NativeCallback(g => {
+          d(g);
+          try {
+            s.openWebView()
+          } catch (v) {
+            console.error("[laserbox] web view failed to open:", v.stack ?? v)
+          }
+        }, "void", ["pointer"]);
+      n(k.onShowPopupDone, f);
+      let b = new NativeFunction(r(k.fadeOut), "void", ["pointer"]),
+        O = new NativeCallback(g => {
+          console.log(`[laserbox] fadeOut on ${g}`), s.teardownWebView(), s.forget(g), b(g)
+        }, "void", ["pointer"]);
+      n(k.fadeOut, O);
+      let x = new NativeCallback(g => {
+        try {
+          s.teardownWebView(), s.forget(g), s.fn.fadeOut(g)
+        } catch (v) {
+          console.error("[laserbox] close failed:", v.message ?? v)
+        }
+      }, "void", ["pointer"]);
+      return n(k.backButtonPressed, x), n(k.homeButtonPressed, x), this.vtable = t, t
+    }
+    static webView() {
+      let e = this.fn.laserBoxManager();
+      return e.isNull() ? NULL : this.fn.webView(e)
+    }
+    static warnedNoJava = !1;
+    static javaReady() {
+      if (!p("jniEnv")) return !0;
+      try {
+        return this.fn.jniEnv === void 0 && (this.fn.jniEnv = new NativeFunction(l("jniEnv"), "pointer", [])), this.fn.jniEnv().isNull() ? (this.warnedNoJava || (this.warnedNoJava = !0, console.log("[laserbox] no java environment on this thread \u2014 the web view is left to the game")), !1) : !0
+      } catch {
+        return !1
+      }
+    }
+    static detach(e) {
+      try {
+        if (e.isNull() || e.add(Rt).readPointer().isNull()) return;
+        this.fn.removeFromParent(e)
+      } catch (t) {
+        console.error("[laserbox] detach failed:", t.message ?? t)
+      }
+    }
+    static readyWebView() {
+      try {
+        let e = this.webView();
+        if (e.isNull() || !this.javaReady()) return NULL;
+        let t = e.add(T.titanView).readPointer();
+        if (t.isNull()) return NULL;
+        let r = t.readPointer();
+        return r.isNull() || r.add(Vt).readPointer().isNull() ? NULL : e
+      } catch {
+        return NULL
+      }
+    }
+    static openWebView() {
+      let e = this.readyWebView();
+      if (e.isNull()) {
+        this.wantsOpen = !0;
+        return
+      }
+      this.wantsOpen = !1;
+      let t = "start";
+      try {
+        t = "music", this.musicDucked || (this.musicDucked = !0, F.play()), t = "detach", this.detach(e), t = "clear anchor", e.add(T.anchorClip).writePointer(NULL), t = "clear preloaded url", u.write(e.add(T.preloadedUrl), ""), t = "layout", this.layoutWebView(), t = "goTo";
+        let r = u.create(this.url);
+        this.fn.goTo(e, r), u.destroy(r), this.webViewOpen = !0, console.log(`[laserbox] fullscreen web view -> ${this.url}`)
+      } catch (r) {
+        console.error(`[laserbox] web view failed at "${t}": ${r.message??r}`)
+      }
+    }
+    static layoutWebView() {
+      let e = this.readyWebView();
+      if (e.isNull()) return;
+      let t = "stage";
+      try {
+        let r = this.fn.stage();
+        if (r.isNull()) return;
+        let n = r.add(E.insetLeft).readFloat();
+        t = "screen size";
+        let o = this.fn.screenWidth(),
+          i = this.fn.screenHeight();
+        if (o <= 0 || i <= 0) return;
+        t = "rect";
+        let a = e.add(T.rect);
+        a.writeFloat(-n), a.add(4).writeFloat(0), a.add(8).writeFloat(o - n), a.add(12).writeFloat(i), e.add(T.alpha).writeFloat(1), t = "push", this.fn.pushGeometry(e)
+      } catch (r) {
+        console.error(`[laserbox] layout failed at "${t}": ${r.message??r}`)
+      }
+    }
+    static teardownWebView() {
+      if (this.wantsOpen = !1, this.musicDucked && (this.musicDucked = !1, F.stop()), !!this.webViewOpen) {
+        this.webViewOpen = !1;
+        try {
+          let e = this.readyWebView();
+          if (e.isNull()) return;
+          this.fn.hideWebView(e), e.add(T.anchorClip).writePointer(NULL)
+        } catch (e) {
+          console.error("[laserbox] web view teardown failed:", e.message ?? e)
+        }
+      }
+    }
+    static installBridge() {
+      if (!p("webViewShouldOpen") || !p("webViewDidFinishLoad") || !p("webViewEval")) {
+        console.log("[laserbox] no web view bridge offsets \u2014 the page will run on its own shim");
+        return
+      }
+      let e = Interceptor;
+      if (typeof e.replaceFast != "function") {
+        console.error("[laserbox] Interceptor.replaceFast is unavailable \u2014 the bridge would open a browser, so it stays off");
+        return
+      }
+      let t = null,
+        r = new NativeCallback((n, o) => {
+          let i = "";
+          try {
+            i = u.read(o)
+          } catch {}
+          if (s.traceUrls && console.log(`[laserbox] shouldOpenURL ${JSON.stringify(i)}`), i.startsWith(De)) {
+            try {
+              s.dispatch(i)
+            } catch (a) {
+              console.error("[laserbox] bridge call failed:", a.stack ?? a)
+            }
+            return 0
+          }
+          return t === null ? 1 : t(n, o)
+        }, "int", ["pointer", "pointer"]);
+      this.bridgeCallback = r, t = new NativeFunction(e.replaceFast(l("webViewShouldOpen"), r), "int", ["pointer", "pointer"]), this.bridgeListeners.push(Interceptor.attach(l("webViewDidFinishLoad"), {
+        onLeave() {
+          try {
+            s.injectBridge()
+          } catch (n) {
+            console.error("[laserbox] bridge injection failed:", n.stack ?? n)
+          }
+        }
+      })), console.log("[laserbox] js bridge installed")
+    }
+    static evaluate(e) {
+      let t = this.readyWebView();
+      if (t.isNull() || this.fn.evalJs === null) return;
+      let r = t.add(T.titanView).readPointer();
+      if (r.isNull()) return;
+      let n = u.create(e);
+      this.fn.evalJs(r, n), u.destroy(n)
+    }
+    static bridgeData() {
+      return {
+        safeArea: {
+          left: 0,
+          right: 0,
+          top: 0,
+          bottom: 0
+        },
+        platform: "android",
+        version: 1,
+        channel: 1,
+        youngPlayer: !1,
+        maintenance: !1,
+        settings: {
+          sfxVolume: 1,
+          musicVolume: 1,
+          language: (m.gameLanguage() || "en").toLowerCase()
+        },
+        tabs: [],
+        heroes: [],
+        country: "",
+        playerTag: "",
+        level: 0,
+        jwt: this.jwt(),
+        nativeMusic: F.loaded
+      }
+    }
+    static methods = ["getJwt", "refreshJwt", "playSound", "claimVoucherQuiet", "claimVoucher", "openShop", "openUrl", "openUrlWithSso", "stopMusic", "resumeMusic", "markTabAsSeen", "getSupportedCreator", "triggerHaptics", "setMenuMusic", "close"];
+    static injectBridge() {
+      let e = JSON.stringify(this.bridgeData()),
+        t = JSON.stringify(this.methods),
+        n = `(function(){
+  if (window.__btbBridge) return;
+  window.__btbBridge = true;
+  var pending = {}, next = 1;
+  window.__btbSettle = function(id, json){
+    var p = pending[id]; if (!p) return; delete pending[id];
+    var value = null; try { value = json ? JSON.parse(json) : null; } catch (e) {}
+    p(value);
+  };
+  var queue = [], sending = false;
+  function drain(){
+    if (sending || queue.length === 0) return;
+    sending = true;
+    var url = queue.shift();
+    // A main-frame navigation to an unknown scheme is what the web view asks
+    // the game about, and the game cancels it \u2014 so the page stays put and the
+    // url arrives as a message. A hidden iframe does not reach that callback.
+    try { window.location.href = url; } catch (e) {}
+    setTimeout(function(){ sending = false; drain(); }, 0);
+  }
+  function send(name, args){
+    return new Promise(function(resolve){
+      var id = next++;
+      pending[id] = resolve;
+      queue.push(${JSON.stringify(De)} + "call?id=" + id
+        + "&name=" + encodeURIComponent(name)
+        + "&args=" + encodeURIComponent(JSON.stringify(args || [])));
+      drain();
+    });
+  }
+  var bridge = ${e};
+  ${t}.forEach(function(name){
+    bridge[name] = function(){ return send(name, Array.prototype.slice.call(arguments)); };
+  });
+  window.bridge = bridge;
+  if (typeof window.__bridgeResolve === "function") window.__bridgeResolve(bridge);
+})();`;
+      this.evaluate(n), console.log("[laserbox] bridge injected into the page")
+    }
+    static dispatch(e) {
+      let t = e.slice(e.indexOf("?") + 1),
+        r = {};
+      for (let d of t.split("&")) {
+        let f = d.indexOf("=");
+        f < 0 || (r[d.slice(0, f)] = decodeURIComponent(d.slice(f + 1)))
+      }
+      let n = r.id ?? "",
+        o = r.name ?? "",
+        i = [];
+      try {
+        i = JSON.parse(r.args ?? "[]")
+      } catch {}
+      let a = null;
+      try {
+        a = this.handle(o, i)
+      } catch (d) {
+        console.error(`[laserbox] bridge ${o} failed:`, d.stack ?? d)
+      }
+      n.length > 0 && this.evaluate(`window.__btbSettle(${JSON.stringify(n)}, ${JSON.stringify(JSON.stringify(a??null))})`)
+    }
+    static handle(e, t) {
+      let r = n => typeof t[n] == "string" ? t[n].trim() : "";
+      switch (e) {
+        case "close":
+          return console.log("[laserbox] close requested by the page"), this.closePopup(), null;
+        case "playSound":
+          return this.playSound(r(0));
+        case "stopMusic":
+          return this.setMusicMuted(!0);
+        case "resumeMusic":
+          return this.setMusicMuted(!1);
+        case "triggerHaptics":
+          return this.triggerHaptics();
+        case "claimVoucher":
+        case "claimVoucherQuiet":
+          return this.claimVoucher(r(0));
+        case "markTabAsSeen":
+          return this.markTabAsSeen(r(0));
+        case "getSupportedCreator":
+          return this.supportedCreator();
+        case "getJwt":
+          return {
+            jwt: this.jwt()
+          };
+        case "refreshJwt": {
+          let n = this.native("laserBoxRequestJwt", "void", []);
+          return n !== null && n(), {
+            jwt: this.jwt()
+          }
+        }
+        case "openShop":
+          return this.openShop(r(0));
+        case "openUrl":
+        case "openUrlWithSso":
+          return this.openUrl(r(0), e === "openUrlWithSso");
+        case "setMenuMusic":
+          return t[0] !== !1 ? F.play() : F.stop(), null;
+        default:
+          return console.log(`[laserbox] bridge ${e}() is not wired on android yet`), null
+      }
+    }
+    static playSound(e) {
+      let t = this.singleton("soundManager");
+      if (t.isNull()) return "";
+      let r = e === "BackButton" ? "soundBack" : e === "CloseButton" ? "soundClose" : "soundOk",
+        n = this.native(r, "pointer", []),
+        o = this.native("soundPlay", "void", ["pointer", "pointer", "int", "int", "float", "float", "float"]);
+      if (n === null || o === null) return "";
+      let i = n();
+      return i.isNull() || o(t, i, -1, -1, 1, 0, 1), ""
+    }
+    static setMusicMuted(e) {
+      let t = this.singleton("soundManager");
+      if (t.isNull()) return "";
+      let r = this.native("soundFadeMusic", "void", ["pointer", "float", "float", "float"]);
+      if (r === null) return "";
+      this.musicStops = Math.max(0, this.musicStops + (e ? 1 : -1));
+      let n = this.musicStops > 0,
+        o = t.add(It).readFloat();
+      return r(t, o, n ? 0 : 1, Tt), ""
+    }
+    static triggerHaptics() {
+      let e = this.singleton("gameSettings");
+      if (e.isNull() || e.add(_t).readU8() === 0) return "";
+      let t = this.native("hapticFeedback", "void", ["int"]);
+      return t === null || t(Mt), ""
+    }
+    static claimVoucher(e) {
+      if (e.length === 0) return {
+        ok: !1,
+        message: "Empty code"
+      };
+      let t = this.singleton("messageManager");
+      if (t.isNull()) return {
+        ok: !1,
+        message: "Not connected"
+      };
+      let r = this.native("voucherMessageCtor", "pointer", ["pointer"]),
+        n = this.native("stringAssignCStr", "pointer", ["pointer", "pointer"]);
+      if (r === null || n === null) return {
+        ok: !1,
+        message: "Not available"
+      };
+      let o = He(ce.size);
+      return o.isNull() ? {
+        ok: !1,
+        message: "Out of memory"
+      } : (r(o), n(o.add(ce.codeOffset), Memory.allocUtf8String(e)), new NativeFunction(t.readPointer().add(ce.sendSlot * Process.pointerSize).readPointer(), "void", ["pointer", "pointer"])(t, o), console.log(`[laserbox] voucher claim sent: ${e}`), {
+        ok: !0
+      })
+    }
+    static markTabAsSeen(e) {
+      let t = this.native("laserBoxManager", "pointer", []),
+        r = this.native("laserBoxSetSiteSeen", "void", ["pointer", "int"]);
+      if (t === null || r === null) return "";
+      let n = ze.sites[e.toLowerCase()];
+      if (n === void 0) return {
+        ok: !1,
+        message: `Unknown tab '${e}'`
+      };
+      let o = t();
+      return o.isNull() || r(o, n), ""
+    }
+    static supportedCreator() {
+      try {
+        let e = this.singleton("gameMain");
+        if (e.isNull()) return {
+          creator: ""
+        };
+        if (e.add(_.modeIdOffset).readS32() !== _.homeModeId) return {
+          creator: ""
+        };
+        let t = e.add(_.modeOffset).readPointer();
+        if (t.isNull()) return {
+          creator: ""
+        };
+        let r = t.add(_.logicOffset).readPointer();
+        if (r.isNull()) return {
+          creator: ""
+        };
+        let n = r.add(_.clientHomeOffset).readPointer();
+        if (n.isNull()) return {
+          creator: ""
+        };
+        let o = n.add(_.playerDataOffset).readPointer();
+        if (o.isNull()) return {
+          creator: ""
+        };
+        let i = o.add(_.creatorOffset).readPointer();
+        return {
+          creator: i.isNull() ? "" : u.read(i)
+        }
+      } catch {
+        return {
+          creator: ""
+        }
+      }
+    }
+    static jwt() {
+      let e = this.native("laserBoxManager", "pointer", []);
+      if (e === null) return "";
+      let t = e();
+      if (t.isNull()) return "";
+      try {
+        return u.read(t.add(ze.jwtOffset))
+      } catch {
+        return ""
+      }
+    }
+    static openShop(e) {
+      let t = p("homeMode") ? new NativeFunction(l("homeMode"), "pointer", [])() : NULL;
+      if (t.isNull() || t.add(72).readPointer().isNull()) return {
+        ok: !1,
+        message: "Not on the home screen"
+      };
+      let r = this.native("shopOpen", "pointer", []);
+      if (r === null) return {
+        ok: !1,
+        message: "Not available"
+      };
+      this.closePopup();
+      let n = r();
+      if (!n.isNull() && /^\d+$/.test(e)) {
+        let o = this.native("shopSelectItem", "void", ["pointer", "pointer"]);
+        if (o !== null) {
+          let i = u.create(e);
+          o(n, i), u.destroy(i)
+        }
+      } else e.length > 0 && console.log(`[laserbox] shop section ${JSON.stringify(e)} is not an item id \u2014 opened the shop instead`);
+      return {
+        ok: !0
+      }
+    }
+    static openUrl(e, t) {
+      if (e.length === 0) return {
+        ok: !1,
+        message: "Empty url"
+      };
+      if (t) {
+        let n = this.singleton("scidManager"),
+          o = this.native("openWebSso", "void", ["pointer", "pointer"]);
+        if (!n.isNull() && o !== null) {
+          let i = u.create(e);
+          return o(n, i), u.destroy(i), console.log(`[laserbox] opened ${e} through supercell id`), {
+            ok: !0
+          }
+        }
+      }
+      if (this.fn.openUrl === null) return {
+        ok: !1,
+        message: "Not available"
+      };
+      let r = u.create(e);
+      return this.fn.openUrl(r), u.destroy(r), console.log(`[laserbox] opened ${e}`), {
+        ok: !0
+      }
+    }
+    static forget(e) {
+      this.popup !== null && this.popup.equals(e) && (this.popup = null)
+    }
+    static closePopup() {
+      let e = this.popup;
+      if (e === null) {
+        console.log("[laserbox] close(): no popup is open");
+        return
+      }
+      this.popup = null;
+      try {
+        this.teardownWebView(), e.add(Bt).writePointer(NULL);
+        let t = e.readPointer(),
+          r = n => {
+            let o = t.add(n * Process.pointerSize).readPointer();
+            o.isNull() || new NativeFunction(o, "void", ["pointer"])(e)
+          };
+        r(k.beforeClose), r(k.fadeOut), this.unlink(e)
+      } catch (t) {
+        console.error("[laserbox] close failed:", t.message ?? t)
+      }
+    }
+    static unlink(e) {
+      try {
+        let t = this.fn.gui();
+        !t.isNull() && p("guiRemovePopup") && new NativeFunction(l("guiRemovePopup"), "void", ["pointer", "pointer"])(t, e), this.detach(e)
+      } catch (t) {
+        console.error("[laserbox] unlink failed:", t.message ?? t)
+      }
+    }
+    static uninstall() {
+      if (this.replacement === null) return "fullscreen inbox is not installed";
+      this.replacement.detach(), this.replacement = null;
+      for (let e of this.bridgeListeners) e.detach();
+      return this.bridgeListeners = [], this.bridgeCallback !== null && p("webViewShouldOpen") && (Interceptor.revert(l("webViewShouldOpen")), this.bridgeCallback = null), this.teardownWebView(), "fullscreen inbox removed"
+    }
+  };
+  var Dt = "https://inbox.backtobs.xyz/",
+    Ht = "http://127.0.0.1:8899/",
+    pe = Dt,
+    Wt = 6229188,
+    Jt = 0,
+    Gt = 8367748,
+    qt = !0,
+    Xt = !1,
+    We = !0,
+    Kt = 2,
+    A = class {
+      static listener = null;
+      static spaListener = null;
+      static fullscreenListeners = [];
+      static url = null;
+      static patch() {
+        if (this.listener !== null) return;
+        let e = y.offset(Wt, -1);
+        if (e.isNull()) {
+          console.log("[laserbox] no url resolver on this platform \u2014 native override skipped");
+          return
+        }
+        this.url = u.create(pe);
+        let t = this.url;
+        if (this.listener = Interceptor.attach(e, {
+            onEnter(r) {
+              this.site = r[0].toInt32()
+            },
+            onLeave(r) {
+              this.site === Jt && r.replace(t)
+            }
+          }), qt) {
+          let r = y.offset(Gt, -1);
+          r.isNull() || (this.spaListener = Interceptor.attach(r, {
+            onLeave(n) {
+              n.replace(ptr(1))
+            }
+          }), console.log("[laserbox] single page app mode forced on"))
+        }
+        this.forceFullscreen(), We && j.install(pe), console.log(`[laserbox] fullscreen inbox url -> ${pe} (resolver hooked at ${e})`)
+      }
+      static forceFullscreen() {
+        if (!Xt) return;
+        if (!p("newsPopupCtor") || !p("popupBaseCtor")) {
+          console.log("[laserbox] no popup offsets on this platform \u2014 inbox stays windowed");
+          return
+        }
+        let e = !1;
+        this.fullscreenListeners.push(Interceptor.attach(l("newsPopupCtor"), {
+          onEnter() {
+            e = !0
+          },
+          onLeave() {
+            e = !1
+          }
+        })), this.fullscreenListeners.push(Interceptor.attach(l("popupBaseCtor"), {
+          onEnter(t) {
+            e && (t[Kt] = ptr(1))
+          }
+        })), console.log("[laserbox] inbox popup forced fullscreen")
+      }
+      static unpatch() {
+        if (this.listener === null) return "laserbox override is not installed";
+        this.listener.detach(), this.listener = null, this.spaListener !== null && (this.spaListener.detach(), this.spaListener = null);
+        for (let e of this.fullscreenListeners) e.detach();
+        return this.fullscreenListeners = [], We && j.uninstall(), "laserbox override removed"
+      }
+    };
+  var Yt = "https://cnn.backtobs.xyz",
+    Qt = "wss://cnn.backtobs.xyz",
+    Zt = "http://192.168.0.106:5080",
+    er = "ws://192.168.0.106:5080",
+    z = Yt,
+    Je = Qt,
+    Ge = `${z}/api/security`,
+    qe = ["/api/ingame/account", "/api/event/v1", "/api/rewards/sdk/v1", "/api/social/v3", "/api/presence/v1", "/api/inventory/v3", "/api/account/v2", "/guest"],
+    $ = [];
+  for (let s of qe) $.push([`https://id.supercell.com${s}`, `${z}${s}`]);
+  $.push(["https://cdn.id.supercell.com/assets", `${z}/cdn/assets`]);
+  $.push(["wss://id.supercell.com/ws", `${Je}/ws`]);
+  for (let s of ["security", "security-us", "security-eu", "security-apac"]) $.push([`https://${s}.id.supercell.com/api/security`, Ge]);
+  for (let s of qe) $.push([`https://i.projectgrom.ru${s}`, `${z}${s}`]);
+  $.push(["https://i.projectgrom.ru/cdn/assets", `${z}/cdn/assets`]);
+  $.push(["wss://i.projectgrom.ru/ws", `${Je}/ws`]);
+  $.push(["https://i.projectgrom.ru/api/security", Ge]);
+  var de = 10,
+    G = class {
+      static patch() {
+        if (!!0) return "clientVersion: skipped (dev)";
+        if (!p("clientHelloMinor")) return "clientVersion: no offset for this platform \u2014 skipped";
+        let e = l("clientHelloMinor");
+        try {
+          return Interceptor.attach(e, {
+            onEnter(t) {
+              t[1] = ptr(de)
+            }
+          }), `clientVersion: ClientHello minor forced -> ${de} (reports 59.197.${de})`
+        } catch (t) {
+          return `clientVersion: hook failed: ${t.message??t}`
+        }
+      }
+    };
+  var fe = "libg.so",
+    Xe = 200,
+    Ke = 9e4,
+    Ye = !1;
+
+  function tr() {
+    if (!Ye) {
+      Ye = !0, console.log("[agent] Back to Brawl \u2014 Android"), console.log("[agent] Frida:", Frida.version, "|", h.toString());
+      try {
+        H.patch();
+        let s = G.patch();
+        console.log(`[agent] ${s}`), I.write(`[clientVersion] ${s}`), C.install(), A.patch()
+      } catch (s) {
+        console.error("[agent] install failed:", s.stack ?? s)
+      }
+    }
+  }
+
+  function me(s = 0) {
+    if (Process.findModuleByName(fe) !== null) {
+      console.log(`[agent] ${fe} mapped after ${s}ms`), tr();
+      return
+    }
+    if (s >= Ke) {
+      console.error(`[agent] ${fe} never appeared (${Ke/1e3}s) \u2014 is this the right process?`);
+      return
+    }
+    setTimeout(() => me(s + Xe), Xe)
+  }
+  me();
+  rpc.exports.init = function() {
+    return me(), "waiting for the game library"
+  };
+  rpc.exports.reloadPrices = function() {
+    return C.reloadPrices()
+  };
+  rpc.exports.prices = function() {
+    return C.dump()
+  };
+  rpc.exports.testStore = function(s) {
+    return C.testStore(s)
+  };
+  rpc.exports.testPopup = function() {
+    return L.show({
+      title: "WEB SHOP",
+      message: `Popup test.
+
+Does the confirm button reach the agent?`,
+      confirmText: "YES",
+      cancelText: "NO",
+      onConfirm: () => console.log("[agent] popup: confirm"),
+      onCancel: () => console.log("[agent] popup: cancel")
+    }) ? "popup shown" : "popup could not be built"
+  };
+  rpc.exports.billingOff = function() {
+    return C.uninstall()
+  };
+  rpc.exports.laserboxOff = function() {
+    return A.unpatch()
+  };
+  rpc.exports.setRegion = function(s) {
+    return c.regionOverride = s === void 0 || s.length === 0 ? null : s.toUpperCase(), m.reset(), C.reloadPrices(), `region = ${c.regionOverride??m.region()??"unknown"}`
+  };
+  rpc.exports.setLanguage = function(s) {
+    return c.languageOverride = s === void 0 || s.length === 0 ? null : s.toLowerCase(), m.reset(), `language = ${c.languageOverride??m.language()??"unknown"}`
+  };
+})();

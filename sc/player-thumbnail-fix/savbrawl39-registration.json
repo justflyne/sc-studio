@@ -1,0 +1,41 @@
+{
+  "status": "registered",
+  "client": "/home/justflyne/projects/sc-studio/sc/SavBrawl_39.99",
+  "file": "/home/justflyne/projects/sc-studio/sc/SavBrawl_39.99/assets/csv_logic/player_thumbnails.csv",
+  "records_before": 78,
+  "records_after": 80,
+  "original_record_order_preserved": true,
+  "old_file_sha256": "a443aa355bbbc00db8836b2db0fd98aff2c8a9b3c6c5a5fadbcde7bad643980a",
+  "new_file_sha256": "d5823b8033bef1f5facfe287bcabe5dff327b912abec4837b88aa1a0d23db5c7",
+  "backup": "/home/justflyne/projects/sc-studio/sc/backups/savbrawl39-thumbnail-20261014-233750/player_thumbnails.csv",
+  "registered": [
+    {
+      "id": 28000078,
+      "data_row_index": 78,
+      "Name": "player_icon_creator_3_26",
+      "RequiredExpLevel": "0",
+      "RequiredTotalTrophies": "0",
+      "RequiredSeasonPoints": "0",
+      "RequiredHero": "",
+      "IconSWF": "sc/ui.sc",
+      "IconExportName": "player_icon_creator_3_26",
+      "SortOrder": "1010",
+      "IsReward": "true"
+    },
+    {
+      "id": 28000079,
+      "data_row_index": 79,
+      "Name": "player_icon_creator_4_26",
+      "RequiredExpLevel": "0",
+      "RequiredTotalTrophies": "0",
+      "RequiredSeasonPoints": "0",
+      "RequiredHero": "",
+      "IconSWF": "sc/ui.sc",
+      "IconExportName": "player_icon_creator_4_26",
+      "SortOrder": "1011",
+      "IsReward": "true"
+    }
+  ],
+  "sc_exports_checked": true,
+  "game_on_device_tested": false
+}

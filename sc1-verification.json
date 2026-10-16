@@ -1,0 +1,74 @@
+{
+  "tested_at": "2026-10-14T17:08:48.123704+00:00",
+  "input_files": {
+    "ui.sc": {
+      "bytes": 5781007,
+      "sha256": "8379b83d7be8f2cbb99ecbb5941f30190cb8947de909beb0e055a6c3b045c3a5"
+    },
+    "ui_tex.sc": {
+      "bytes": 9499317,
+      "sha256": "8990e25b39a862d72c46e1b481caab9d67e4a34fc8861f48ae934be5dacf5000"
+    }
+  },
+  "inputs_modified": false,
+  "sample": {
+    "format": "SC1",
+    "resources": 10260,
+    "exports": 2016,
+    "shapes": 1895,
+    "movieclips": 6611,
+    "textfields": 1751,
+    "textures": [
+      [
+        4096,
+        4096
+      ],
+      [
+        4096,
+        4096
+      ],
+      [
+        1916,
+        3004
+      ],
+      [
+        1536,
+        1502
+      ]
+    ],
+    "matrix_banks": 16,
+    "matrices": 982970,
+    "validation_errors": []
+  },
+  "checks": {
+    "untouched_main_byte_identical": true,
+    "untouched_texture_companion_byte_identical": true,
+    "edited_utf8_text_roundtrip": true,
+    "edited_geometry_roundtrip": true,
+    "edited_framerate_roundtrip": true,
+    "opaque_metadata_preserved": true,
+    "gui_open_actual_pair": true,
+    "gui_preview_export": "battle_end_bg",
+    "gui_preview_items": 4001,
+    "gui_actual_open_seconds": 8.26,
+    "gui_undo_redo_tested": true,
+    "mcp_sc1_tested": true,
+    "lzham_codec_tested": true,
+    "installed_command_uses_workspace_sources": true
+  },
+  "pytest": {
+    "command": "SC1_SAMPLE=/home/justflyne/projects/sc-studio/ui.sc .venv/bin/python -m pytest tests -q",
+    "passed": 242,
+    "skipped": 5,
+    "seconds": 230.32
+  },
+  "game_engine_execution_tested": false,
+  "limitations": [
+    "Deprecated SC1 movieclip tags 3/14",
+    "Signed SIG containers",
+    "Zstandard frames without declared decompressed size",
+    "Unknown drawing commands retained without preview",
+    "SCTX preview",
+    "Opaque v4 START metadata retained without recomputing its internal values"
+  ]
+}

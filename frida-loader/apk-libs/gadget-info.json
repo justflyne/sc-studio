@@ -1,0 +1,20 @@
+{
+  "version": "17.23.3",
+  "release_url": "https://github.com/frida/frida/releases/tag/17.23.3",
+  "asset_url": "https://github.com/frida/frida/releases/download/17.23.3/frida-gadget-17.23.3-android-arm64.so.xz",
+  "asset_sha256": "aeb3109844d69f5745438597667841a9141e8701a174341999e1479a4c97925f",
+  "files": {
+    "libback.so": {
+      "bytes": 25237232,
+      "sha256": "fa57c07da45611b2bc1ee408a36967c542c8b3809ceccde3779047dd320d5cb4"
+    },
+    "libback.config.so": {
+      "bytes": 207,
+      "sha256": "b452b98494a80e2fce5cce625986754b782aee3d0570b582c1dd3dec14117b7d"
+    },
+    "libback.script.so": {
+      "bytes": 667419,
+      "sha256": "36950eb754dc69246081d6257020f0e0edd773c62ffd77fbb6698a7861e1dda3"
+    }
+  }
+}

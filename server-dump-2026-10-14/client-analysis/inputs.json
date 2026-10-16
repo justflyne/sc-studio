@@ -1,0 +1,33 @@
+[
+  {
+    "path": "/home/justflyne/projects/backtobrawl_59.1210_fastdl/lib/arm64-v8a/libback.so",
+    "bytes": 25564520,
+    "sha256": "a65ed41136f2d327ec38ea8bc91dafd691bfeb19ec70f392cc792503e610fe4c",
+    "exported_symbols": []
+  },
+  {
+    "path": "/home/justflyne/projects/backtobrawl_59.1210_fastdl/lib/arm64-v8a/libsupercell_brawlstars.so",
+    "bytes": 177352,
+    "sha256": "8c0432780d3eeb8f0f7da5e1717623890452300b797fa89bc5115684f79867fe",
+    "exported_symbols": [
+      "JNI_OnLoad",
+      "Java_lp_aa_a__I"
+    ]
+  },
+  {
+    "path": "/home/justflyne/projects/backtobrawl_59.1210_fastdl/lib/arm64-v8a/libg.so",
+    "bytes": 16679864,
+    "sha256": "066ea5f9530d22650d1082453b2a2f793633a2386ff9298fd5c93edb7777c3d6",
+    "exported_symbols": [
+      "JNI_OnLoad",
+      "Java_com_supercell_titan_usercentrics_UsercentricsSDK_gotConsent",
+      "Java_com_supercell_titan_usercentrics_UsercentricsSDK_popupShowing",
+      "Java_com_supercell_titan_usercentrics_UsercentricsSDK_popupClosed"
+    ]
+  },
+  {
+    "path": "/home/justflyne/projects/backtobrawl_59.1210_fastdl/assets/hhbbhonjfbej.dat",
+    "bytes": 688912,
+    "sha256": "a7ac27ba2f3c454bb17a54632b536cbea1e5461023a47d23fcee1ddf7eb24e70"
+  }
+]

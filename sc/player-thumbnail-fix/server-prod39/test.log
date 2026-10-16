@@ -1,0 +1,20 @@
+[Shop] PurchaseOffer OK idx=0 claim=thumbnail-regression currency=0 cost=7
+[Shop] PurchaseOffer REJECT already purchased idx=0 claim=thumbnail-regression
+[Shop] PurchaseOffer OK idx=0 claim=thumbnail-regression currency=1 cost=7
+[Shop] PurchaseOffer REJECT already purchased idx=0 claim=thumbnail-regression
+[Shop] PurchaseOffer OK idx=0 claim=thumbnail-regression currency=3 cost=7
+[Shop] PurchaseOffer REJECT already purchased idx=0 claim=thumbnail-regression
+[Shop] PurchaseOffer OK idx=0 claim=thumbnail-regression currency=0 cost=7
+[Shop] PurchaseOffer REJECT already purchased idx=0 claim=thumbnail-regression
+[Shop] PurchaseOffer OK idx=0 claim=thumbnail-regression currency=1 cost=7
+[Shop] PurchaseOffer REJECT already purchased idx=0 claim=thumbnail-regression
+[Shop] PurchaseOffer OK idx=0 claim=thumbnail-regression currency=3 cost=7
+[Shop] PurchaseOffer REJECT already purchased idx=0 claim=thumbnail-regression
+[Shop] PurchaseOffer REJECT unavailable thumbnail idx=0
+[Shop] PurchaseOffer REJECT unavailable thumbnail idx=0
+[Shop] PurchaseOffer REJECT unavailable thumbnail idx=0
+[Shop] PurchaseOffer REJECT unavailable thumbnail idx=0
+[Shop] PurchaseOffer REJECT unavailable thumbnail idx=0
+[Shop] PurchaseOffer REJECT unavailable thumbnail idx=0
+[Shop] PurchaseOffer REJECT no diamonds idx=0 cost=7
+PlayerThumbnailShopRegression: 302 checks passed

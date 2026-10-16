@@ -1,0 +1,18 @@
+[
+  "http://127.0.0.1:8899/",
+  "http://192.168.0.106:5080",
+  "https://${s}.id.supercell.com/api/security",
+  "https://cdn.id.supercell.com/assets",
+  "https://cnn.backtobs.xyz",
+  "https://i.projectgrom.ru${s}",
+  "https://i.projectgrom.ru/api/security",
+  "https://i.projectgrom.ru/cdn/assets",
+  "https://id.supercell.com${s}",
+  "https://inbox.backtobs.xyz/",
+  "https://inbox.backtobs.xyz/prices.json",
+  "https://store.backtobs.xyz",
+  "ws://192.168.0.106:5080",
+  "wss://cnn.backtobs.xyz",
+  "wss://i.projectgrom.ru/ws",
+  "wss://id.supercell.com/ws"
+]

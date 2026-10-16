@@ -1,0 +1,9 @@
+{
+  "backup": "/home/justflyne/projects/sc-studio/sc/backups/savbrawl39-shop-20261014-235534",
+  "fixed_rows": [
+    "PlayerThumbnail",
+    "GuaranteedBox"
+  ],
+  "rows": 52,
+  "columns": 32
+}

@@ -1,0 +1,35 @@
+{
+  "status": "files_updated_manual_restart_pending",
+  "server_restarted": false,
+  "old_pid_still_running": 1711133,
+  "backup": "/root/prod39/backups/player-thumbnail-20261015-000756",
+  "updated_files": [
+    "SavBrawl/Logic/Home/Items/Offer.java",
+    "SavBrawl/Logic/Home/ClientHome.java",
+    "SavBrawl/Logic/Assets/sc/ui.sc",
+    "SavBrawl/Logic/Assets/sc/ui_tex.sc",
+    "build/classes/savbrawl/logic/home/ClientHome$AutoShopRarity.class",
+    "build/classes/savbrawl/logic/home/ClientHome$SkinOffersFile.class",
+    "build/classes/savbrawl/logic/home/ClientHome$QuestPreview.class",
+    "build/classes/savbrawl/logic/home/ClientHome$BillingPurchase.class",
+    "build/classes/savbrawl/logic/home/ClientHome.class",
+    "build/classes/savbrawl/logic/home/ClientHome$SpecialEventProgress.class",
+    "build/classes/savbrawl/logic/home/items/Offer.class",
+    "tests/PlayerThumbnailShopRegression.java"
+  ],
+  "checks_passed": 302,
+  "file_sha256": {
+    "SavBrawl/Logic/Home/Items/Offer.java": "4e47706c914ef5ba3127580345c85457b286b29b44104a4a69b65ad2d5a103ba",
+    "SavBrawl/Logic/Home/ClientHome.java": "72471c05950c550a55a78c50087b7c109715bf577829e24584318eb99ad2f44b",
+    "SavBrawl/Logic/Assets/sc/ui.sc": "c4e88bcd31a87dc6d7e7a6ed41a38482892968690dee417215d7762fb05cdc29",
+    "SavBrawl/Logic/Assets/sc/ui_tex.sc": "cbfa894d4171e1f11f7de98582182bdfed0210a0e90d8218b13f278d30576f7a",
+    "build/classes/savbrawl/logic/home/ClientHome$AutoShopRarity.class": "a89a157a99bc031a3ea33e8020619aec65c2201db4a4a49bd22e4ba38821b6d8",
+    "build/classes/savbrawl/logic/home/ClientHome$SkinOffersFile.class": "a90006ea1d805d6b94e20ccfae8143424a1e1fc1e775e86a0345f920984d24a0",
+    "build/classes/savbrawl/logic/home/ClientHome$QuestPreview.class": "bb4dff5838adda3a435f87ec768ac2134d8f5fc54e917b48ef138d75708d2629",
+    "build/classes/savbrawl/logic/home/ClientHome$BillingPurchase.class": "36946776e593c3a794d6bba3720dc37f38bcf4e2a8a05b717aa76059332cc03a",
+    "build/classes/savbrawl/logic/home/ClientHome.class": "771280794df317320d48fea9cff578e1a443c1b87126faf61e5d501dae10c365",
+    "build/classes/savbrawl/logic/home/ClientHome$SpecialEventProgress.class": "ba4ccf02ca15bd05c8370940f8edc21c82b8fd56b7a4f82d01a0bb3101f093ba",
+    "build/classes/savbrawl/logic/home/items/Offer.class": "f0ca909804a91c06d2c176496e41e84222c4b6d31c2c99efd42214f1d3b5b9c8",
+    "tests/PlayerThumbnailShopRegression.java": "f6db09ea9b0c8502dc36884fc050473e3f6f139e40dd811bfe582e979792cc95"
+  }
+}

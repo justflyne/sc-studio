@@ -1,0 +1,18 @@
+{
+  "server_restarted": false,
+  "running_pid": 1711133,
+  "assets": [
+    {
+      "file": "sc/ui.sc",
+      "http_status": 200,
+      "bytes": 5806247,
+      "sha256": "c4e88bcd31a87dc6d7e7a6ed41a38482892968690dee417215d7762fb05cdc29"
+    },
+    {
+      "file": "sc/ui_tex.sc",
+      "http_status": 200,
+      "bytes": 11944794,
+      "sha256": "cbfa894d4171e1f11f7de98582182bdfed0210a0e90d8218b13f278d30576f7a"
+    }
+  ]
+}

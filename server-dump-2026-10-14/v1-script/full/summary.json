@@ -1,0 +1,21 @@
+{
+  "protocol": 3,
+  "version": "ad602661a16ad0b8",
+  "epoch": 5,
+  "content_hash": "ad602661a16ad0b8251b63186ee314d6269259e9500d1bd6ea89fb75a031aa76",
+  "rel_sig": "okdRLRkuIc6o8++nq94AY9lfUqMvyCzK0Ce21lhhPh9kxriVSHrOtpxfnVQinrVX1mqtaadjUgdQv/Jp7h7UCw==",
+  "issued_at": 1791988695,
+  "cnonce": "ccdab1f020f2778ac3ce9dfbdd8b41a1",
+  "max_age": 86400,
+  "not_modified": false,
+  "captured_at": "2026-10-14T14:38:15.929308+00:00",
+  "http_status": 200,
+  "request_body_bytes": 220,
+  "response_body_bytes": 97836,
+  "seal_nonce_bytes": 24,
+  "seal_box_bytes": 73318,
+  "plaintext_bytes": 73302,
+  "source_bytes": 70619,
+  "channel_authentication_verified": true,
+  "release_signature_verified": true
+}

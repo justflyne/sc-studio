@@ -1,0 +1,29 @@
+{
+  "backup": "/root/prod39/backups/player-thumbnail-20261015-000756",
+  "original_hashes": {
+    "SavBrawl/Logic/Home/Items/Offer.java": "a31f6b8c5b670afa5b4829faa33e10d5a9785fe9a493cb4e85cacba1000a9749",
+    "SavBrawl/Logic/Home/ClientHome.java": "249f21889d27c024e5f4fc318dbb7f47a34fed13edc772be4038922746ca0ddb",
+    "build/classes/savbrawl/logic/home/items/Offer.class": "850c3c0af17452cfb531546b0bdf15bc8d459dc04e8ee3394ee67dc9658be303",
+    "build/classes/savbrawl/logic/home/ClientHome.class": "3fa194beb7766d43f919b40ef6390d96f5ff58e41474d306cb2713bec2e6a914",
+    "SavBrawl/Logic/Assets/sc/ui.sc": "e2a24e4ea071975c8692c9130d23c08fc044406172f0cc5c5124765ba96c734d",
+    "SavBrawl/Logic/Assets/sc/ui_tex.sc": "4e80da10ee618f61910190bcc2c4ec6ec42ac838ec3060519425adde0966556e",
+    "SavBrawl/Logic/Assets/csv_client/shop_items.csv": "c978469e5ac41312f8e4e1dbe27ef721394aa4c25f3407cd1ca5396a749cca85",
+    "SavBrawl/Logic/Assets/csv_logic/player_thumbnails.csv": "b37f0f7661347f3b6eee5d5fc793f48d37d1267f09b551cd24877c14f1b13968",
+    "SavBrawl/Logic/Assets/fingerprint.json": "f2265528181aecf332a69c039f4172da4206442d495720bdeb0566a4b08fac04"
+  },
+  "old_pid": 1711133,
+  "stage": "/root/prod39/backups/player-thumbnail-20261015-000756/prepared",
+  "target": "root@savbrawl.fun:/root/prod39",
+  "source_changes": [
+    "SavBrawl/Logic/Home/Items/Offer.java",
+    "SavBrawl/Logic/Home/ClientHome.java"
+  ],
+  "native_libg_modified": false,
+  "json_offer_schema_changed": false,
+  "prepared_hashes": {
+    "SavBrawl/Logic/Home/Items/Offer.java": "4e47706c914ef5ba3127580345c85457b286b29b44104a4a69b65ad2d5a103ba",
+    "SavBrawl/Logic/Home/ClientHome.java": "72471c05950c550a55a78c50087b7c109715bf577829e24584318eb99ad2f44b",
+    "SavBrawl/Logic/Assets/sc/ui.sc": "c4e88bcd31a87dc6d7e7a6ed41a38482892968690dee417215d7762fb05cdc29",
+    "SavBrawl/Logic/Assets/sc/ui_tex.sc": "cbfa894d4171e1f11f7de98582182bdfed0210a0e90d8218b13f278d30576f7a"
+  }
+}

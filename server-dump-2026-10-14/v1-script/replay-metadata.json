@@ -1,0 +1,37 @@
+{
+  "captured_at": "2026-10-14T14:23:48.010937+00:00",
+  "source": "fresh replay of user-provided request",
+  "method": "POST",
+  "path": "/v1/script",
+  "request_http_version": "HTTP/1.0",
+  "request_headers": {
+    "Host": "script.backtobs.xyz:8787",
+    "Content-Type": "application/json",
+    "Content-Length": "236",
+    "Connection": "close"
+  },
+  "request_body_bytes": 236,
+  "response_http_version": 10,
+  "status": 200,
+  "reason": "OK",
+  "response_headers": {
+    "Server": "BTBScriptServer/2 Python/3.14.4",
+    "Date": "Wed, 14 Oct 2026 14:23:47 GMT",
+    "Content-Type": "application/json",
+    "Cache-Control": "no-store",
+    "Content-Length": "552"
+  },
+  "response_body_bytes": 552,
+  "truncated": false,
+  "response_sha256": "0cf97583871db6a9c80fc0ed5800787cb175b379c9fdbcced16aca6d62d98db5",
+  "response_keys": [
+    "protocol",
+    "seal_nonce",
+    "seal_box"
+  ],
+  "response_protocol": 3,
+  "seal_nonce_decoded_bytes": 24,
+  "seal_box_decoded_bytes": 355,
+  "same_nonce_as_captured": false,
+  "same_box_as_captured": false
+}

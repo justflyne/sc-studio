@@ -1,0 +1,27 @@
+{
+  "apk": "/home/justflyne/projects/sc-studio/frida-loader/output/backtobrawl-gadget-unsigned.apk",
+  "bytes": 786698402,
+  "entries": 13866,
+  "signed": false,
+  "zipaligned": false,
+  "zip_crc_verified": true,
+  "original_manifest_dex_resources_game_library_preserved": true,
+  "gadget_files": [
+    {
+      "path": "lib/arm64-v8a/libback.so",
+      "bytes": 25237232,
+      "sha256": "fa57c07da45611b2bc1ee408a36967c542c8b3809ceccde3779047dd320d5cb4"
+    },
+    {
+      "path": "lib/arm64-v8a/libback.config.so",
+      "bytes": 207,
+      "sha256": "b452b98494a80e2fce5cce625986754b782aee3d0570b582c1dd3dec14117b7d"
+    },
+    {
+      "path": "lib/arm64-v8a/libback.script.so",
+      "bytes": 667419,
+      "sha256": "36950eb754dc69246081d6257020f0e0edd773c62ffd77fbb6698a7861e1dda3"
+    }
+  ],
+  "android_install_tested": false
+}

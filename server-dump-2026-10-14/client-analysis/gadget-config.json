@@ -1,0 +1,1 @@
+{ "code_signing": "optional", "interaction": { "type": "script", "path": "<embedded>", "on_change": "ignore" } }

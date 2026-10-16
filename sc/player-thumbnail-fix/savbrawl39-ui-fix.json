@@ -1,0 +1,48 @@
+{
+  "native_libg_modified": false,
+  "format": "SC1",
+  "popup_export": "shop_popupitem_27",
+  "background_resource": 10379,
+  "reused_native_v39_background": true,
+  "converted_atlases": [
+    5,
+    6
+  ],
+  "pixel_conversion_lossless": true,
+  "original_atlases_unchanged": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "resource_records_changed": [
+    219
+  ],
+  "exports_and_matrix_banks_unchanged": true,
+  "popup_preview_checks": [
+    {
+      "export": "player_icon_creator_3_26",
+      "image": "/home/justflyne/projects/sc-studio/sc/player-thumbnail-fix/previews/shop_popupitem_27--player_icon_creator_3_26.png",
+      "width": 449,
+      "height": 422
+    },
+    {
+      "export": "player_icon_creator_4_26",
+      "image": "/home/justflyne/projects/sc-studio/sc/player-thumbnail-fix/previews/shop_popupitem_27--player_icon_creator_4_26.png",
+      "width": 449,
+      "height": 422
+    }
+  ],
+  "on_device_tested": false,
+  "files": {
+    "ui.sc": {
+      "bytes": 5806247,
+      "sha256": "c4e88bcd31a87dc6d7e7a6ed41a38482892968690dee417215d7762fb05cdc29"
+    },
+    "ui_tex.sc": {
+      "bytes": 11944794,
+      "sha256": "cbfa894d4171e1f11f7de98582182bdfed0210a0e90d8218b13f278d30576f7a"
+    }
+  }
+}

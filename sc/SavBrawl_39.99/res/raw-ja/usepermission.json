@@ -1,0 +1,62 @@
+{
+	"title" : "アクセス権限を許可してください。",
+	"summary" : "円滑なゲームプレイのためには、以下の権限が必要です。",
+	"prefix_essential" : "必須",
+	"prefix_optional" : "選択",
+	"list": [
+		{
+			"key" : "storage",
+			"name" : "保存空間",
+			"permissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE" ],
+			"desc" : "お客様の画像とファイルにはアクセスすることはありませんので、安心してご利用頂けます。 ゲームの設定とキャッシュの保存、１：１お問い合わせの対応のために、画像、メディア、ファイル及び外部ストレージへのアクセスが必要です。"
+		},
+		{
+			"key" : "contracts",
+			"name" : "アドレス帳",
+			"permissions" : [ "android.permission.GET_ACCOUNTS", "android.permission.USE_CREDENTIALS", "android.permission.READ_CONTACTS", "android.permission.WRITE_CONTACTS", "android.permission.READ_PROFILE", "android.permission.WRITE_PROFILE" ],
+			"desc" : "お客様のアドレス帳機能には影響がありませんので、安心してご利用頂けます。 この権限は、各種のプッシュ通知の発信に必要です。"
+		},
+		{
+			"key" : "phone",
+			"name" : "電話",
+			"permissions" : [ "android.permission.READ_PHONE_STATE", "android.permission.CALL_PHONE", "android.permission.READ_CALL_LOG", " android.permission.WRITE_CALL_LOG", "com.android.voicemail.permission.ADD_VOICEMAIL", "android.permission.USE_SIP", "android.permission.PROCESS_OUTGOING_CALLS" ],
+			"desc" : "お客様の電話番号を収集したり、通話をかけたりすることはありませんので、安心してご利用頂けます。 不正な利用の予防及び統計処理のために、デバイス固有の識別値(Android ID)を確認する時に必要とします。"
+		},
+		{
+			"key" : "microphone",
+			"name" : "マイク",
+			"permissions" : [ "android.permission.READ_AUDIO" , "android.permission.RECORD_AUDIO" ],
+			"desc" : "お客様のマイク機能には影響がありませんので、安心してご利用頂けます。 この権限は、ゲーム内でマイクを活用するコンテンツに必要です。"
+		},
+		{
+			"key" : "camera",
+			"name" : "カメラ",
+			"permissions" : [ "android.permission.CAMERA" ],
+			"desc" : "お客様のカメラ機能には影響がありませんので、安心してご利用頂けます。 この権限は、ゲーム内でカメラを活用するコンテンツに必要です。"
+		},
+		{
+			"key" : "location",
+			"name" : "位置",
+			"permissions" : [ "android.permission.ACCESS_FINE_LOCATION", " android.permission.ACCESS_COARSE_LOCATION" ],
+			"desc" : "お客様の位置情報には影響がありませんので、安心してご利用頂けます。 この権限は、ゲーム内で位置を活用するコンテンツに必要です。"
+		},
+		{
+			"key" : "sms",
+			"name" : "SMS",
+			"permissions" : [ "android.permission.SEND_SMS", "android.permission.RECEIVE_SMS", "android.permission.READ_SMS", "android.permission.RECEIVE_WAP_PUSH", "android.permission.RECEIVE_MMS", "android.permission.READ_CELL_BROADCASTS" ],
+			"desc" : "お客様のSMS送信機能には影響がありませんので、安心してご利用頂けます。 この権限は、認証SMSの認証番号を自動入力するために必要です。"
+		},
+		{
+			"key" : "calendar",
+			"name" : "カレンダー",
+			"permissions" : [ "android.permission.READ_CALENDAR", "android.permission.WRITE_CALENDAR" ],
+			"desc" : "お客様のカレンダー機能には影響がありませんので、安心してご利用頂けます。 この権限は、カレンダーから日程を確認したり、記録するために必要です。"
+		},
+		{
+			"key" : "sensors",
+			"name" : "身体センサー",
+			"permissions" : [ "android.permission.BODY_SENSORS", "android.permission.USE_FINGERPRINT" ],
+			"desc" : "お客様の身体センサー機能には影響がありませんので、安心してご利用頂けます。 この権限は、決済する時に指紋認識機能を使用するために必要です。"
+		}
+	]
+}

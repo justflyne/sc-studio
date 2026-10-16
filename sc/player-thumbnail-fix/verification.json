@@ -1,0 +1,2860 @@
+{
+  "status": "saved_and_verified",
+  "format": "SC1",
+  "source_ui": "APK v59",
+  "source_ui_sha256": "6b3177cc818e74319fbf913b6593ef7a7311e7e96036577ce761ebab68ae55cb",
+  "assets": {
+    "brawlpass_reward_premium_playericon": 281,
+    "item_player_thumbnail": 16809,
+    "mastery_reward_profile_icon": 279,
+    "mastery_reward_small_profile_icon": 276,
+    "offer_item_profilepic_big": 240,
+    "offer_item_profilepic_small": 230,
+    "shop_popupitem_27": 219
+  },
+  "added_exports": [
+    "brawlpass_reward_premium_playericon",
+    "mastery_reward_profile_icon",
+    "mastery_reward_small_profile_icon",
+    "mastery_small_profile_icon",
+    "offer_item_profilepic_big",
+    "offer_item_profilepic_small",
+    "shop_popupitem_27"
+  ],
+  "resources_before": 10271,
+  "resources_after": 10300,
+  "unchanged_old_resource_records": 10270,
+  "changed_old_resource_ids": [
+    16809
+  ],
+  "texture_count_before": 5,
+  "texture_count_after": 7,
+  "all_original_exports_preserved": true,
+  "all_original_banks_preserved": true,
+  "all_original_textures_preserved": true,
+  "all_previous_creator_assets_preserved": true,
+  "validation_errors": [],
+  "runtime_binding_simulations": 560,
+  "player_icon_exports_checked": 80,
+  "runtime_contexts_checked": 7,
+  "binding_checks": [
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_00",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_01",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_02",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_03",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_04",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_05",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_06",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_07",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_8bit",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_actionshow_01",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_actionshow_02",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_amber",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_ash",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_barley",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_barrelbot",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_bea",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_belle",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_bibi",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_bo",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_brock",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_bull",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_buzz",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_bw_01",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_bw_02",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_byron",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_carl",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_colette",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_colt",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_creator_3_26",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_creator_4_26",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_crow",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_edgar",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_elite_00",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_elite_01",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_elite_02",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_elite_03",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_emz",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_frank",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_ft_01",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_ft_02",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_gale",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_gene",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_griff",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_jacky",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_jess",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_leon",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_lolla",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_lou",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_max",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_meg",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_mike",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_mj",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_mortis",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_mrp",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_nani",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_nita",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_penny",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_piper",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_poco",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_primo",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_rick",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_rosa",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_ruffs",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_sandy",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_shelly",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_spike",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_sprout",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_squeak",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_starrforce_01",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_starrforce_02",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_stu",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_surge",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_taro",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_tick",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_trophy_00",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_trophy_01",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_trophy_02",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_trophy_03",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_velocirapids_01",
+      "visible": true
+    },
+    {
+      "context": "brawlpass_reward_premium_playericon",
+      "icon": "player_icon_velocirapids_02",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_00",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_01",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_02",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_03",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_04",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_05",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_06",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_07",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_8bit",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_actionshow_01",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_actionshow_02",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_amber",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_ash",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_barley",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_barrelbot",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_bea",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_belle",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_bibi",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_bo",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_brock",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_bull",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_buzz",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_bw_01",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_bw_02",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_byron",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_carl",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_colette",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_colt",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_creator_3_26",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_creator_4_26",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_crow",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_edgar",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_elite_00",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_elite_01",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_elite_02",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_elite_03",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_emz",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_frank",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_ft_01",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_ft_02",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_gale",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_gene",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_griff",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_jacky",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_jess",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_leon",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_lolla",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_lou",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_max",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_meg",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_mike",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_mj",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_mortis",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_mrp",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_nani",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_nita",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_penny",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_piper",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_poco",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_primo",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_rick",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_rosa",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_ruffs",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_sandy",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_shelly",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_spike",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_sprout",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_squeak",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_starrforce_01",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_starrforce_02",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_stu",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_surge",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_taro",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_tick",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_trophy_00",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_trophy_01",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_trophy_02",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_trophy_03",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_velocirapids_01",
+      "visible": true
+    },
+    {
+      "context": "item_player_thumbnail",
+      "icon": "player_icon_velocirapids_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_00",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_03",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_04",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_05",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_06",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_07",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_8bit",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_actionshow_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_actionshow_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_amber",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_ash",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_barley",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_barrelbot",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_bea",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_belle",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_bibi",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_bo",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_brock",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_bull",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_buzz",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_bw_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_bw_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_byron",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_carl",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_colette",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_colt",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_creator_3_26",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_creator_4_26",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_crow",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_edgar",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_elite_00",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_elite_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_elite_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_elite_03",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_emz",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_frank",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_ft_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_ft_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_gale",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_gene",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_griff",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_jacky",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_jess",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_leon",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_lolla",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_lou",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_max",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_meg",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_mike",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_mj",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_mortis",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_mrp",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_nani",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_nita",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_penny",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_piper",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_poco",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_primo",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_rick",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_rosa",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_ruffs",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_sandy",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_shelly",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_spike",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_sprout",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_squeak",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_starrforce_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_starrforce_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_stu",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_surge",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_taro",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_tick",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_trophy_00",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_trophy_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_trophy_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_trophy_03",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_velocirapids_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_profile_icon",
+      "icon": "player_icon_velocirapids_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_00",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_03",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_04",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_05",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_06",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_07",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_8bit",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_actionshow_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_actionshow_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_amber",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_ash",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_barley",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_barrelbot",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_bea",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_belle",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_bibi",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_bo",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_brock",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_bull",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_buzz",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_bw_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_bw_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_byron",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_carl",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_colette",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_colt",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_creator_3_26",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_creator_4_26",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_crow",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_edgar",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_elite_00",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_elite_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_elite_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_elite_03",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_emz",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_frank",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_ft_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_ft_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_gale",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_gene",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_griff",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_jacky",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_jess",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_leon",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_lolla",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_lou",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_max",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_meg",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_mike",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_mj",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_mortis",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_mrp",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_nani",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_nita",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_penny",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_piper",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_poco",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_primo",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_rick",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_rosa",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_ruffs",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_sandy",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_shelly",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_spike",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_sprout",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_squeak",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_starrforce_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_starrforce_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_stu",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_surge",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_taro",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_tick",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_trophy_00",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_trophy_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_trophy_02",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_trophy_03",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_velocirapids_01",
+      "visible": true
+    },
+    {
+      "context": "mastery_reward_small_profile_icon",
+      "icon": "player_icon_velocirapids_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_00",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_03",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_04",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_05",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_06",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_07",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_8bit",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_actionshow_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_actionshow_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_amber",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_ash",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_barley",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_barrelbot",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_bea",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_belle",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_bibi",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_bo",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_brock",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_bull",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_buzz",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_bw_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_bw_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_byron",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_carl",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_colette",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_colt",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_creator_3_26",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_creator_4_26",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_crow",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_edgar",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_elite_00",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_elite_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_elite_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_elite_03",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_emz",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_frank",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_ft_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_ft_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_gale",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_gene",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_griff",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_jacky",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_jess",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_leon",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_lolla",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_lou",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_max",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_meg",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_mike",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_mj",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_mortis",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_mrp",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_nani",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_nita",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_penny",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_piper",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_poco",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_primo",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_rick",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_rosa",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_ruffs",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_sandy",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_shelly",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_spike",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_sprout",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_squeak",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_starrforce_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_starrforce_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_stu",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_surge",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_taro",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_tick",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_trophy_00",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_trophy_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_trophy_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_trophy_03",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_velocirapids_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_big",
+      "icon": "player_icon_velocirapids_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_00",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_03",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_04",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_05",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_06",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_07",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_8bit",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_actionshow_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_actionshow_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_amber",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_ash",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_barley",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_barrelbot",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_bea",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_belle",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_bibi",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_bo",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_brock",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_bull",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_buzz",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_bw_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_bw_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_byron",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_carl",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_colette",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_colt",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_creator_3_26",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_creator_4_26",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_crow",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_edgar",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_elite_00",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_elite_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_elite_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_elite_03",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_emz",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_frank",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_ft_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_ft_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_gale",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_gene",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_griff",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_jacky",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_jess",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_leon",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_lolla",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_lou",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_max",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_meg",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_mike",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_mj",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_mortis",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_mrp",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_nani",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_nita",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_penny",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_piper",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_poco",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_primo",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_rick",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_rosa",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_ruffs",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_sandy",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_shelly",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_spike",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_sprout",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_squeak",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_starrforce_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_starrforce_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_stu",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_surge",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_taro",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_tick",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_trophy_00",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_trophy_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_trophy_02",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_trophy_03",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_velocirapids_01",
+      "visible": true
+    },
+    {
+      "context": "offer_item_profilepic_small",
+      "icon": "player_icon_velocirapids_02",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_00",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_01",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_02",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_03",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_04",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_05",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_06",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_07",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_8bit",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_actionshow_01",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_actionshow_02",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_amber",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_ash",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_barley",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_barrelbot",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_bea",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_belle",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_bibi",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_bo",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_brock",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_bull",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_buzz",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_bw_01",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_bw_02",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_byron",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_carl",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_colette",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_colt",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_creator_3_26",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_creator_4_26",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_crow",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_edgar",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_elite_00",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_elite_01",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_elite_02",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_elite_03",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_emz",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_frank",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_ft_01",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_ft_02",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_gale",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_gene",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_griff",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_jacky",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_jess",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_leon",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_lolla",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_lou",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_max",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_meg",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_mike",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_mj",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_mortis",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_mrp",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_nani",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_nita",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_penny",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_piper",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_poco",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_primo",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_rick",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_rosa",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_ruffs",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_sandy",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_shelly",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_spike",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_sprout",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_squeak",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_starrforce_01",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_starrforce_02",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_stu",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_surge",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_taro",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_tick",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_trophy_00",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_trophy_01",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_trophy_02",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_trophy_03",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_velocirapids_01",
+      "visible": true
+    },
+    {
+      "context": "shop_popupitem_27",
+      "icon": "player_icon_velocirapids_02",
+      "visible": true
+    }
+  ],
+  "csv_files_modified": false,
+  "game_on_device_tested": false,
+  "backup_path": "/home/justflyne/projects/sc-studio/sc/backups/player-thumbnail-20261014-225249",
+  "files": {
+    "ui.sc": {
+      "bytes": 5787983,
+      "sha256": "e2a24e4ea071975c8692c9130d23c08fc044406172f0cc5c5124765ba96c734d"
+    },
+    "ui_tex.sc": {
+      "bytes": 11002449,
+      "sha256": "4e80da10ee618f61910190bcc2c4ec6ec42ac838ec3060519425adde0966556e"
+    }
+  },
+  "subsequent_savbrawl39_fix": {
+    "report": "savbrawl39-ui-fix.json",
+    "server_report": "server-prod39/deployment-result.json",
+    "server_restarted": false
+  }
+}

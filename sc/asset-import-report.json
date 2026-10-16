@@ -1,0 +1,391 @@
+{
+  "status": "saved_and_verified",
+  "path": "/home/justflyne/projects/sc-studio/sc/ui.sc",
+  "format": "SC1",
+  "original_resource_records_preserved": 10260,
+  "resources_before": 10260,
+  "resources_after": 10271,
+  "textures_before": 4,
+  "textures_after": 5,
+  "exports_before": 2016,
+  "exports_after": 2021,
+  "assets": [
+    {
+      "file": "emblem_icon_09.png",
+      "export": "icon_skins_developers",
+      "height": 85.5,
+      "fps": 30,
+      "xy": [
+        1406,
+        806
+      ],
+      "template": 11486,
+      "source_size": [
+        243,
+        261
+      ],
+      "source_sha256": "602b71ec5effba0f52a5e47ac7fd30ae3815196019bebaca15a0bc73f91edbf1",
+      "rgba_sha256": "1af62875ccea96320d64761f5a19d354839436dd3d4b44c6724e43f3616d220b",
+      "source_movieclip_id": 2,
+      "source_shape_id": 1,
+      "display_size": [
+        79.6,
+        85.5
+      ],
+      "render_bounds": [
+        -39.79999923706055,
+        -42.75,
+        79.5999984741211,
+        85.5
+      ],
+      "movieclip_id": 209,
+      "shape_id": 210,
+      "preview": "/home/justflyne/projects/sc-studio/sc/asset-previews/icon_skins_developers.png",
+      "atlas_index": 4,
+      "atlas_region": [
+        1404,
+        805,
+        1647,
+        1066
+      ],
+      "pixels_match_source": true
+    },
+    {
+      "file": "player_icon_creator_3_26.png",
+      "export": "player_icon_creator_3_26",
+      "height": 100,
+      "fps": 60,
+      "xy": [
+        2,
+        2
+      ],
+      "template": 13449,
+      "source_size": [
+        800,
+        800
+      ],
+      "source_sha256": "a99248fc13a67fa5b4aa2bc37e33aa4664cb6aae2dbc9167f9c998aecccfe84f",
+      "rgba_sha256": "363230d0fcf9ed3668ec30130ace30559837771742c0f4713d45efdac336242f",
+      "source_movieclip_id": 4,
+      "source_shape_id": 3,
+      "display_size": [
+        100.0,
+        100.0
+      ],
+      "render_bounds": [
+        -50.0,
+        -50.0,
+        100.0,
+        100.0
+      ],
+      "movieclip_id": 203,
+      "shape_id": 208,
+      "preview": "/home/justflyne/projects/sc-studio/sc/asset-previews/player_icon_creator_3_26.png",
+      "atlas_index": 4,
+      "atlas_region": [
+        0,
+        1,
+        800,
+        801
+      ],
+      "pixels_match_source": true
+    },
+    {
+      "file": "player_icon_creator_4_26.png",
+      "export": "player_icon_creator_4_26",
+      "height": 100,
+      "fps": 60,
+      "xy": [
+        806,
+        2
+      ],
+      "template": 13449,
+      "source_size": [
+        800,
+        800
+      ],
+      "source_sha256": "5e2f2819f3ee35cdade7f7f64bbf6a9ecc76898d75c5da91e3d33d3746193013",
+      "rgba_sha256": "210eb6594e9198185d016eb8ce8927ecbd912ef8a677735e415fee4a6fc2f192",
+      "source_movieclip_id": 6,
+      "source_shape_id": 5,
+      "display_size": [
+        100.0,
+        100.0
+      ],
+      "render_bounds": [
+        -50.0,
+        -50.0,
+        100.0,
+        100.0
+      ],
+      "movieclip_id": 175,
+      "shape_id": 184,
+      "preview": "/home/justflyne/projects/sc-studio/sc/asset-previews/player_icon_creator_4_26.png",
+      "atlas_index": 4,
+      "atlas_region": [
+        804,
+        1,
+        1604,
+        801
+      ],
+      "pixels_match_source": true
+    },
+    {
+      "file": "emoji_creator_3_26.png",
+      "export": "emoji_creator_3_26",
+      "height": 54.5,
+      "fps": 60,
+      "xy": [
+        2,
+        806
+      ],
+      "template": 5505,
+      "source_size": [
+        671,
+        661
+      ],
+      "source_sha256": "b51c63f7379493b36cfd8e086bd03f5216d0c849546e48d8e1f538646018bf5b",
+      "rgba_sha256": "4d72a88a81d73f829299db61228ee97559dcc88bd494c735898e6fa283854a3c",
+      "source_movieclip_id": 8,
+      "source_shape_id": 7,
+      "display_size": [
+        55.3,
+        54.5
+      ],
+      "render_bounds": [
+        -31.200000762939453,
+        -31.100000023841858,
+        62.0,
+        62.0
+      ],
+      "movieclip_id": 168,
+      "shape_id": 173,
+      "preview": "/home/justflyne/projects/sc-studio/sc/asset-previews/emoji_creator_3_26.png",
+      "atlas_index": 4,
+      "atlas_region": [
+        0,
+        805,
+        671,
+        1466
+      ],
+      "pixels_match_source": true
+    },
+    {
+      "file": "emoji_creator_4_26.png",
+      "export": "emoji_creator_4_26",
+      "height": 54.5,
+      "fps": 60,
+      "xy": [
+        677,
+        806
+      ],
+      "template": 5505,
+      "source_size": [
+        725,
+        661
+      ],
+      "source_sha256": "f4617871341a9f4bf81f7c68626abc5bc70b77fdfceace557d70e40ca9dad26b",
+      "rgba_sha256": "afbb17e42df4caf57528367db5633079fb277042aa60a2bfa565f95c014d13aa",
+      "source_movieclip_id": 10,
+      "source_shape_id": 9,
+      "display_size": [
+        59.8,
+        54.5
+      ],
+      "render_bounds": [
+        -31.200000762939453,
+        -31.100000023841858,
+        62.0,
+        62.0
+      ],
+      "movieclip_id": 142,
+      "shape_id": 164,
+      "preview": "/home/justflyne/projects/sc-studio/sc/asset-previews/emoji_creator_4_26.png",
+      "atlas_index": 4,
+      "atlas_region": [
+        675,
+        805,
+        1400,
+        1466
+      ],
+      "pixels_match_source": true
+    }
+  ],
+  "icon_skins_usage": [
+    {
+      "export": "icon_skins_brawlywood",
+      "movieclip_id": 11471,
+      "parents_in_sc": 0,
+      "skin_campaigns": "BRAWLYWOOD"
+    },
+    {
+      "export": "icon_skins_legendary",
+      "movieclip_id": 11472,
+      "parents_in_sc": 0,
+      "skin_campaigns": "LEGENDARYSET"
+    },
+    {
+      "export": "icon_skins_retro",
+      "movieclip_id": 11473,
+      "parents_in_sc": 0,
+      "skin_campaigns": "RETRO;RETRO22"
+    },
+    {
+      "export": "icon_skins_punk",
+      "movieclip_id": 11474,
+      "parents_in_sc": 0,
+      "skin_campaigns": "PUNK"
+    },
+    {
+      "export": "icon_skins_laml",
+      "movieclip_id": 11475,
+      "parents_in_sc": 0,
+      "skin_campaigns": "LAML"
+    },
+    {
+      "export": "icon_skins_ranked",
+      "movieclip_id": 11476,
+      "parents_in_sc": 0,
+      "skin_campaigns": "RANKED;RANKED_OLD"
+    },
+    {
+      "export": "icon_skins_lny21",
+      "movieclip_id": 11477,
+      "parents_in_sc": 0,
+      "skin_campaigns": ""
+    },
+    {
+      "export": "icon_skins_anniversary",
+      "movieclip_id": 11478,
+      "parents_in_sc": 0,
+      "skin_campaigns": "ANNIVERSARY2019;ANNIVERSARY2020;ANNIVERSARY2021;ANNIVERSARY2022"
+    },
+    {
+      "export": "icon_skins_wf",
+      "movieclip_id": 11479,
+      "parents_in_sc": 0,
+      "skin_campaigns": "WF_2020;WF_2021;WF_2022;WC_2022;WF_2023;WC_2023;WF_2024"
+    },
+    {
+      "export": "icon_skins_gold",
+      "movieclip_id": 11480,
+      "parents_in_sc": 0,
+      "skin_campaigns": "GOLD"
+    },
+    {
+      "export": "icon_skins_silver",
+      "movieclip_id": 11481,
+      "parents_in_sc": 0,
+      "skin_campaigns": "SILVER"
+    },
+    {
+      "export": "icon_skins_prereg_cn",
+      "movieclip_id": 11482,
+      "parents_in_sc": 0,
+      "skin_campaigns": "CHINA"
+    },
+    {
+      "export": "icon_skins_brawl_pass",
+      "movieclip_id": 11483,
+      "parents_in_sc": 0,
+      "skin_campaigns": "BRAWLPASS;BRAWLPASS_PUNK;BRAWLPASS_BRAWLYWOOD"
+    },
+    {
+      "export": "icon_skins_sc10y",
+      "movieclip_id": 11484,
+      "parents_in_sc": 0,
+      "skin_campaigns": "SC10"
+    },
+    {
+      "export": "icon_skins_archive",
+      "movieclip_id": 11485,
+      "parents_in_sc": 0,
+      "skin_campaigns": "ARCHIVING;ARCHIVED"
+    },
+    {
+      "export": "icon_skins_make",
+      "movieclip_id": 11486,
+      "parents_in_sc": 0,
+      "skin_campaigns": "SC_MAKE"
+    },
+    {
+      "export": "icon_skins_psg",
+      "movieclip_id": 11488,
+      "parents_in_sc": 0,
+      "skin_campaigns": "PSG"
+    },
+    {
+      "export": "icon_skins_lny20",
+      "movieclip_id": 11489,
+      "parents_in_sc": 0,
+      "skin_campaigns": "LNY_2019;LNY_2020;LNY_2021;LNY22;LNY_2023;LNY"
+    },
+    {
+      "export": "icon_skins_line",
+      "movieclip_id": 11490,
+      "parents_in_sc": 0,
+      "skin_campaigns": "LINE"
+    },
+    {
+      "export": "icon_skins_star_coin",
+      "movieclip_id": 11491,
+      "parents_in_sc": 0,
+      "skin_campaigns": ""
+    },
+    {
+      "export": "icon_skins_cny",
+      "movieclip_id": 11492,
+      "parents_in_sc": 0,
+      "skin_campaigns": ""
+    },
+    {
+      "export": "icon_skins_crosspro",
+      "movieclip_id": 11493,
+      "parents_in_sc": 0,
+      "skin_campaigns": ""
+    },
+    {
+      "export": "icon_skins_brawloween",
+      "movieclip_id": 11494,
+      "parents_in_sc": 0,
+      "skin_campaigns": "BRAWLOWEEN2020;BRAWLOWEEN;BRAWLOWEEN22"
+    },
+    {
+      "export": "icon_skins_brawlmas",
+      "movieclip_id": 11495,
+      "parents_in_sc": 0,
+      "skin_campaigns": "BRAWLIDAYS;BRAWLIDAYS_2018"
+    },
+    {
+      "export": "icon_skins_prereg",
+      "movieclip_id": 11496,
+      "parents_in_sc": 0,
+      "skin_campaigns": ""
+    },
+    {
+      "export": "icon_skins_c1a",
+      "movieclip_id": 11515,
+      "parents_in_sc": 0,
+      "skin_campaigns": ""
+    },
+    {
+      "export": "icon_skins_developers",
+      "movieclip_id": 209,
+      "parents_in_sc": 0,
+      "skin_campaigns": ""
+    }
+  ],
+  "backup_path": "/home/justflyne/projects/sc-studio/sc/backups/creator-assets-20261014-215120",
+  "source_client_csv_folder": "/home/justflyne/projects/backtobrawl_59.1210_fastdl/assets/csv_logic",
+  "validation_errors": [],
+  "output_files": {
+    "ui.sc": {
+      "bytes": 5811576,
+      "sha256": "c17268948d8f842b0f435a1723050eef38199e1e20faa467cac768a1f1d25f45"
+    },
+    "ui_tex.sc": {
+      "bytes": 10248186,
+      "sha256": "f105500cc7626be3b1bbb64a533677067da20d63100f0783218ca6e3b0e83a55"
+    }
+  }
+}

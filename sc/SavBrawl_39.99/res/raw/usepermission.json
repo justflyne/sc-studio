@@ -1,0 +1,62 @@
+{
+	"title" : "Please grant permissions.",
+	"summary" : "The following permissions are required for smooth game play.",
+	"prefix_essential" : "Required",
+	"prefix_optional" : "Optional",
+	"list": [
+		{
+			"key" : "storage",
+			"name" : "Storage",
+			"permissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE" ],
+			"desc" : "We need your permission to access photos, media, files and external storage for game settings, cache storage and 1:1 inquiry handling."
+		},
+		{
+			"key" : "contracts",
+			"name" : "Contacts",
+			"permissions" : [ "android.permission.GET_ACCOUNTS", "android.permission.USE_CREDENTIALS", "android.permission.READ_CONTACTS", "android.permission.WRITE_CONTACTS", "android.permission.READ_PROFILE", "android.permission.WRITE_PROFILE" ],
+			"desc" : "This permission is needed for push notifications. Your address book feature will not be affected."
+		},
+		{
+			"key" : "phone",
+			"name" : "Phone",
+			"permissions" : [ "android.permission.READ_PHONE_STATE", "android.permission.CALL_PHONE", "android.permission.READ_CALL_LOG", " android.permission.WRITE_CALL_LOG", "com.android.voicemail.permission.ADD_VOICEMAIL", "android.permission.USE_SIP", "android.permission.PROCESS_OUTGOING_CALLS" ],
+			"desc" : "This permission is needed to access your phone to check the device identifier to prevent abusing and process statistics. We will not collect your phone number or call you."
+		},
+		{
+			"key" : "microphone",
+			"name" : "Microphone",
+			"permissions" : [ "android.permission.READ_AUDIO" , "android.permission.RECORD_AUDIO" ],
+			"desc" : "Don't worry, your microphone feature will not be affected. This permission is needed for content using the microphone in the game."
+		},
+		{
+			"key" : "camera",
+			"name" : "Camera",
+			"permissions" : [ "android.permission.CAMERA" ],
+			"desc" : "This permission is needed for content using the camera in the game. Your camera feature will not be affected."
+		},
+		{
+			"key" : "location",
+			"name" : "Location",
+			"permissions" : [ "android.permission.ACCESS_FINE_LOCATION", " android.permission.ACCESS_COARSE_LOCATION" ],
+			"desc" : "This permission is needed for content using device location information in the game. Your location information will not be affected."
+		},
+		{
+			"key" : "sms",
+			"name" : "SMS",
+			"permissions" : [ "android.permission.SEND_SMS", "android.permission.RECEIVE_SMS", "android.permission.READ_SMS", "android.permission.RECEIVE_WAP_PUSH", "android.permission.RECEIVE_MMS", "android.permission.READ_CELL_BROADCASTS" ],
+			"desc" : "This permission is needed to enter the verification code automatically from the verification SMS. Your SMS sending feature will not be affected."
+		},
+		{
+			"key" : "calendar",
+			"name" : "Calendar",
+			"permissions" : [ "android.permission.READ_CALENDAR", "android.permission.WRITE_CALENDAR" ],
+			"desc" : "This permission is needed to check the schedule in the calendar or enter a new event. Your calendar feature will not be affected."
+		},
+		{
+			"key" : "sensors",
+			"name" : "Bio Sensor",
+			"permissions" : [ "android.permission.BODY_SENSORS", "android.permission.USE_FINGERPRINT" ],
+			"desc" : "This permission is needed for fingerprint recognition for payment transactions. Your Bio Sensor feature will not be affected."
+		}
+	]
+}

@@ -1,0 +1,62 @@
+{
+	"title" : "請授予權限。",
+	"summary" : "需要以下權限才能順利遊戲。",
+	"prefix_essential" : "需要",
+	"prefix_optional" : "可選",
+	"list": [
+		{
+			"key" : "storage",
+			"name" : "儲存空間",
+			"permissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE" ],
+			"desc" : "需要授予照片、媒體、檔案以及外部儲存空間的存取權限才能進行遊戲設定、快取及一對一詢問處理。"
+		},
+		{
+			"key" : "contracts",
+			"name" : "聯絡資訊",
+			"permissions" : [ "android.permission.GET_ACCOUNTS", "android.permission.USE_CREDENTIALS", "android.permission.READ_CONTACTS", "android.permission.WRITE_CONTACTS", "android.permission.READ_PROFILE", "android.permission.WRITE_PROFILE" ],
+			"desc" : "需要此權限才能傳送推送通知。 你的通訊錄功能不會受影響。"
+		},
+		{
+			"key" : "phone",
+			"name" : "電話",
+			"permissions" : [ "android.permission.READ_PHONE_STATE", "android.permission.CALL_PHONE", "android.permission.READ_CALL_LOG", " android.permission.WRITE_CALL_LOG", "com.android.voicemail.permission.ADD_VOICEMAIL", "android.permission.USE_SIP", "android.permission.PROCESS_OUTGOING_CALLS" ],
+			"desc" : "需要電話存取權限才能檢查裝置識別碼以防止濫用及處理統計資訊。 我們不會收集你的電話號碼或打電話給你。"
+		},
+		{
+			"key" : "microphone",
+			"name" : "麥克風",
+			"permissions" : [ "android.permission.READ_AUDIO" , "android.permission.RECORD_AUDIO" ],
+			"desc" : "別擔心，你的麥克風功能不會受影響。 遊戲內使用麥克風的內容需要此權限。"
+		},
+		{
+			"key" : "camera",
+			"name" : "相機",
+			"permissions" : [ "android.permission.CAMERA" ],
+			"desc" : "遊戲內使用相機的內容需要此權限。 你的相機功能不會受影響。"
+		},
+		{
+			"key" : "location",
+			"name" : "位置",
+			"permissions" : [ "android.permission.ACCESS_FINE_LOCATION", " android.permission.ACCESS_COARSE_LOCATION" ],
+			"desc" : "遊戲內使用裝置位置資訊的內容需要此權限。 你的位置資訊不會受影響。"
+		},
+		{
+			"key" : "sms",
+			"name" : "簡訊",
+			"permissions" : [ "android.permission.SEND_SMS", "android.permission.RECEIVE_SMS", "android.permission.READ_SMS", "android.permission.RECEIVE_WAP_PUSH", "android.permission.RECEIVE_MMS", "android.permission.READ_CELL_BROADCASTS" ],
+			"desc" : "需要此權限才能從驗證簡訊自動輸入驗證碼。 你的簡訊傳送功能不會受影響。"
+		},
+		{
+			"key" : "calendar",
+			"name" : "行事歷",
+			"permissions" : [ "android.permission.READ_CALENDAR", "android.permission.WRITE_CALENDAR" ],
+			"desc" : "需要此權限才能查看行事歷中的日程或輸入新事件。 你的行事歷功能不會受影響。"
+		},
+		{
+			"key" : "sensors",
+			"name" : "生物感測器",
+			"permissions" : [ "android.permission.BODY_SENSORS", "android.permission.USE_FINGERPRINT" ],
+			"desc" : "需要此權限才能使用指紋識別進行支付交易。 你的生物感測器功能不會受影響。"
+		}
+	]
+}
