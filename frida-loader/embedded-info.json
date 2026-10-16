@@ -1,9 +1,0 @@
-{
-  "javascript": "embedded-loader.js",
-  "header": "embedded-script.h",
-  "bytes": 88065,
-  "sha256": "62af50618de3f370085b413d6756ba81d90fc86c1d6d1af8bd978f6bdf03fc68",
-  "format": "self-starting classic JavaScript; no imports or external files",
-  "target": "Android; current native-API agent from /v1/script",
-  "header_encoding": "UTF-8 byte array, NUL-terminated"
-}

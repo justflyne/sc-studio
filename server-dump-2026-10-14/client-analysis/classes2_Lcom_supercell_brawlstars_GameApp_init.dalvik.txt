@@ -1,5 +1,0 @@
-Lcom/supercell/brawlstars/GameApp;-><init>()V
-0000 invoke-direct v0, Lcom/supercell/titan/GameApp;-><init>()V
-0006 const-string v0, "back"
-000a invoke-static v0, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
-0010 return-void 
