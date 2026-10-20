@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/rawnullbyte/SC-Studio/actions/workflows/ci.yml/badge.svg)](https://github.com/rawnullbyte/SC-Studio/actions/workflows/ci.yml)
 
+**Its fork which support SC1 and SC2 versions (based on https://github.com/rawnullbyte/SC-Studio)**
+
 A desktop editor for Supercell **SC1 and SC2** files (SC2 versions 5 and 6) — browse, edit and
 author resources, and move movieclips between files with their dependency graphs
 intact.
